@@ -25,3 +25,4 @@ admin_audit.log
 *.backup
 *.deb
 .DS_Store
+*.bak*
