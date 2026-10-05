@@ -1,0 +1,76 @@
+{
+  "slots": [
+    {
+      "slot": 1,
+      "location": 0,
+      "game_modes": ["GemGrab"],
+      "modificators": []
+    },
+    {
+      "slot": 2,
+      "location": 0,
+      "game_modes": ["Showdown"],
+      "modificators": []
+    },
+    {
+      "slot": 3,
+      "location": 0,
+      "game_modes": ["Heist"],
+      "modificators": []
+    },
+    {
+      "slot": 4,
+      "location": 0,
+      "game_modes": ["Knockout"],
+      "modificators": []
+      },
+    {
+  "slot": 14,
+      "location": 0,
+      "game_modes": ["Knockout"],
+      "modificators": []
+      },
+    {
+  "slot": 15,
+      "location": 0,
+      "game_modes": ["Knockout"],
+      "modificators": []
+      },
+    {
+    "slot": 18,
+      "location": 0,
+      "game_modes": ["Invasion"],
+      "modificators": []
+    },
+    {
+      "slot": 5,
+      "location": 0,
+      "game_modes": ["DuoShowdown"],
+      "modificators": []
+    },
+    {
+      "slot": 6,
+      "location": 0,
+      "game_modes": ["BrawlBall"],
+      "modificators": []
+    },
+    {
+      "slot": 7,
+      "location": 0,
+      "game_modes": ["ProtectKing"],
+      "modificators": [1]
+    },
+    {
+      "slot": 8,
+      "location": 0,
+      "game_modes": ["KingOfHill"],
+      "modificators": [1]
+   },
+{
+      "slot": 10,
+      "location": 0,
+      "game_modes": ["Deathmatch"],
+      "modificators": [1]
+    }
+  ]
+}

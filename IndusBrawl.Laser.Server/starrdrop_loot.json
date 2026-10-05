@@ -1,0 +1,394 @@
+{
+ "RarityWeights": [
+  45,
+  27,
+  16,
+  8,
+  4
+ ],
+ "Tables": {
+  "0": [
+   {
+    "Kind": "Coins",
+    "Weight": 30,
+    "Amount": 100,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "PowerPoints",
+    "Weight": 22,
+    "Amount": 40,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "TokenDoubler",
+    "Weight": 13,
+    "Amount": 120,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "Credits",
+    "Weight": 10,
+    "Amount": 10,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "Bling",
+    "Weight": 10,
+    "Amount": 100,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "Pin",
+    "Weight": 10,
+    "Amount": 1,
+    "Sub": "COMMON",
+    "Prices": null,
+    "Fallback": 100
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 5,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     29
+    ],
+    "Fallback": 250
+   }
+  ],
+  "1": [
+   {
+    "Kind": "Coins",
+    "Weight": 26,
+    "Amount": 200,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "PowerPoints",
+    "Weight": 20,
+    "Amount": 80,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "TokenDoubler",
+    "Weight": 12,
+    "Amount": 220,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "Credits",
+    "Weight": 8,
+    "Amount": 30,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "Bling",
+    "Weight": 10,
+    "Amount": 150,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "Pin",
+    "Weight": 10,
+    "Amount": 1,
+    "Sub": "COMMON",
+    "Prices": null,
+    "Fallback": 100
+   },
+   {
+    "Kind": "Pin",
+    "Weight": 4,
+    "Amount": 1,
+    "Sub": "RARE",
+    "Prices": null,
+    "Fallback": 150
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 10,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     29
+    ],
+    "Fallback": 250
+   }
+  ],
+  "2": [
+   {
+    "Kind": "Coins",
+    "Weight": 18,
+    "Amount": 400,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "PowerPoints",
+    "Weight": 14,
+    "Amount": 150,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "TokenDoubler",
+    "Weight": 10,
+    "Amount": 500,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "Pin",
+    "Weight": 10,
+    "Amount": 1,
+    "Sub": "COMMON",
+    "Prices": null,
+    "Fallback": 100
+   },
+   {
+    "Kind": "Pin",
+    "Weight": 8,
+    "Amount": 1,
+    "Sub": "RARE",
+    "Prices": null,
+    "Fallback": 150
+   },
+   {
+    "Kind": "Brawler",
+    "Weight": 5,
+    "Amount": 1,
+    "Sub": "rare",
+    "Prices": null,
+    "Fallback": 1000
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 20,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     29
+    ],
+    "Fallback": 250
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 15,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     79
+    ],
+    "Fallback": 500
+   }
+  ],
+  "3": [
+   {
+    "Kind": "Coins",
+    "Weight": 12,
+    "Amount": 800,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "PowerPoints",
+    "Weight": 8,
+    "Amount": 300,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 0
+   },
+   {
+    "Kind": "Pin",
+    "Weight": 6,
+    "Amount": 1,
+    "Sub": "COMMON",
+    "Prices": null,
+    "Fallback": 100
+   },
+   {
+    "Kind": "Pin",
+    "Weight": 8,
+    "Amount": 1,
+    "Sub": "RARE",
+    "Prices": null,
+    "Fallback": 250
+   },
+   {
+    "Kind": "Pin",
+    "Weight": 8,
+    "Amount": 1,
+    "Sub": "EPIC",
+    "Prices": null,
+    "Fallback": 350
+   },
+   {
+    "Kind": "Thumbnail",
+    "Weight": 6,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 250
+   },
+   {
+    "Kind": "Brawler",
+    "Weight": 3,
+    "Amount": 1,
+    "Sub": "rare",
+    "Prices": null,
+    "Fallback": 1000
+   },
+   {
+    "Kind": "Brawler",
+    "Weight": 5,
+    "Amount": 1,
+    "Sub": "super_rare",
+    "Prices": null,
+    "Fallback": 1000
+   },
+   {
+    "Kind": "Brawler",
+    "Weight": 4,
+    "Amount": 1,
+    "Sub": "epic",
+    "Prices": null,
+    "Fallback": 1000
+   },
+   {
+    "Kind": "Brawler",
+    "Weight": 5,
+    "Amount": 1,
+    "Sub": "mega_epic",
+    "Prices": null,
+    "Fallback": 1000
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 10,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     29
+    ],
+    "Fallback": 250
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 17,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     79
+    ],
+    "Fallback": 500
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 8,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     149
+    ],
+    "Fallback": 2350
+   }
+  ],
+  "4": [
+   {
+    "Kind": "Pin",
+    "Weight": 15,
+    "Amount": 1,
+    "Sub": "EPIC",
+    "Prices": null,
+    "Fallback": 350
+   },
+   {
+    "Kind": "Thumbnail",
+    "Weight": 5,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": null,
+    "Fallback": 250
+   },
+   {
+    "Kind": "Brawler",
+    "Weight": 10,
+    "Amount": 1,
+    "Sub": "epic",
+    "Prices": null,
+    "Fallback": 2000
+   },
+   {
+    "Kind": "Brawler",
+    "Weight": 8,
+    "Amount": 1,
+    "Sub": "mega_epic",
+    "Prices": null,
+    "Fallback": 3000
+   },
+   {
+    "Kind": "Brawler",
+    "Weight": 12,
+    "Amount": 1,
+    "Sub": "legendary",
+    "Prices": null,
+    "Fallback": 4000
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 15,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     79
+    ],
+    "Fallback": 500
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 25,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     149
+    ],
+    "Fallback": 2350
+   },
+   {
+    "Kind": "Skin",
+    "Weight": 10,
+    "Amount": 1,
+    "Sub": null,
+    "Prices": [
+     199,
+     299
+    ],
+    "Fallback": 3000
+   }
+  ]
+ }
+}

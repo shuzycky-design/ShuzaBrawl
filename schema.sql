@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS shuzabrawl CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE shuzabrawl;
+CREATE TABLE IF NOT EXISTS accounts (
+  `Id` BIGINT NOT NULL PRIMARY KEY,
+  `Trophies` INT NOT NULL DEFAULT 0,
+  `Data` LONGTEXT NOT NULL,
+  KEY idx_trophies (`Trophies`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS alliances (
+  `Id` BIGINT NOT NULL PRIMARY KEY,
+  `Name` VARCHAR(64) NOT NULL,
+  `Trophies` INT NOT NULL DEFAULT 0,
+  `Data` LONGTEXT NOT NULL,
+  KEY idx_trophies (`Trophies`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

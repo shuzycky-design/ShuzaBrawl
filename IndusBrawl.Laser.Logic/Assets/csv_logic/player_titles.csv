@@ -1,0 +1,215 @@
+Name,TitleTID,Gradient
+string,string,String
+TitleMasteryShelly,TID_TITLE_MASTERY_SHELLY,PlayerTitleGold
+TitleMasteryColt,TID_TITLE_MASTERY_COLT,PlayerTitleGold
+TitleMasteryBull,TID_TITLE_MASTERY_BULL,PlayerTitleGold
+TitleMasteryBrock,TID_TITLE_MASTERY_BROCK,PlayerTitleGold
+TitleMasteryRico,TID_TITLE_MASTERY_RICO,PlayerTitleGold
+TitleMasterySpike,TID_TITLE_MASTERY_SPIKE,PlayerTitleGold
+TitleMasteryBarley,TID_TITLE_MASTERY_BARLEY,PlayerTitleGold
+TitleMasteryJessie,TID_TITLE_MASTERY_JESSIE,PlayerTitleGold
+TitleMasteryNita,TID_TITLE_MASTERY_NITA,PlayerTitleGold
+TitleMasteryDynamike,TID_TITLE_MASTERY_DYNAMIKE,PlayerTitleGold
+TitleMasteryPrimo,TID_TITLE_MASTERY_ELPRIMO,PlayerTitleGold
+TitleMasteryMortis,TID_TITLE_MASTERY_MORTIS,PlayerTitleGold
+TitleMasteryCrow,TID_TITLE_MASTERY_CROW,PlayerTitleGold
+TitleMasteryPoco,TID_TITLE_MASTERY_POCO,PlayerTitleGold
+TitleMasteryBo,TID_TITLE_MASTERY_BO,PlayerTitleGold
+TitleMasteryPiper,TID_TITLE_MASTERY_PIPER,PlayerTitleGold
+TitleMasteryPam,TID_TITLE_MASTERY_PAM,PlayerTitleGold
+TitleMasteryTara,TID_TITLE_MASTERY_TARA,PlayerTitleGold
+TitleMasteryDarryl,TID_TITLE_MASTERY_DARRYL,PlayerTitleGold
+TitleMasteryPenny,TID_TITLE_MASTERY_PENNY,PlayerTitleGold
+TitleMasteryFrank,TID_TITLE_MASTERY_FRANK,PlayerTitleGold
+TitleMasteryGene,TID_TITLE_MASTERY_GENE,PlayerTitleGold
+TitleMasteryTick,TID_TITLE_MASTERY_TICK,PlayerTitleGold
+TitleMasteryLeon,TID_TITLE_MASTERY_LEON,PlayerTitleGold
+TitleMasteryRosa,TID_TITLE_MASTERY_ROSA,PlayerTitleGold
+TitleMasteryCarl,TID_TITLE_MASTERY_CARL,PlayerTitleGold
+TitleMasteryBibi,TID_TITLE_MASTERY_BIBI,PlayerTitleGold
+TitleMastery8bit,TID_TITLE_MASTERY_8BIT,PlayerTitleGold
+TitleMasterySandy,TID_TITLE_MASTERY_SANDY,PlayerTitleGold
+TitleMasteryBea,TID_TITLE_MASTERY_BEA,PlayerTitleGold
+TitleMasteryEmz,TID_TITLE_MASTERY_EMZ,PlayerTitleGold
+TitleMasteryMrp,TID_TITLE_MASTERY_MRP,PlayerTitleGold
+TitleMasteryMax,TID_TITLE_MASTERY_MAX,PlayerTitleGold
+TitleMasteryJacky,TID_TITLE_MASTERY_JACKY,PlayerTitleGold
+TitleMasteryGale,TID_TITLE_MASTERY_GALE,PlayerTitleGold
+TitleMasteryNani,TID_TITLE_MASTERY_NANI,PlayerTitleGold
+TitleMasterySprout,TID_TITLE_MASTERY_SPROUT,PlayerTitleGold
+TitleMasterySurge,TID_TITLE_MASTERY_SURGE,PlayerTitleGold
+TitleMasteryColette,TID_TITLE_MASTERY_COLETTE,PlayerTitleGold
+TitleMasteryAmber,TID_TITLE_MASTERY_AMBER,PlayerTitleGold
+TitleMasteryLou,TID_TITLE_MASTERY_LOU,PlayerTitleGold
+TitleMasteryByron,TID_TITLE_MASTERY_BYRON,PlayerTitleGold
+TitleMasteryEdgar,TID_TITLE_MASTERY_EDGAR,PlayerTitleGold
+TitleMasteryRuffs,TID_TITLE_MASTERY_RUFFS,PlayerTitleGold
+TitleMasteryStu,TID_TITLE_MASTERY_STU,PlayerTitleGold
+TitleMasteryBelle,TID_TITLE_MASTERY_BELLE,PlayerTitleGold
+TitleMasterySqueak,TID_TITLE_MASTERY_SQUEAK,PlayerTitleGold
+TitleMasteryGrom,TID_TITLE_MASTERY_GROM,PlayerTitleGold
+TitleMasteryBuzz,TID_TITLE_MASTERY_BUZZ,PlayerTitleGold
+TitleMasteryGriff,TID_TITLE_MASTERY_GRIFF,PlayerTitleGold
+TitleMasteryAsh,TID_TITLE_MASTERY_ASH,PlayerTitleGold
+TitleMasteryMeg,TID_TITLE_MASTERY_MEG,PlayerTitleGold
+TitleMasteryLola,TID_TITLE_MASTERY_LOLA,PlayerTitleGold
+TitleMasteryFang,TID_TITLE_MASTERY_FANG,PlayerTitleGold
+TitleMasteryEve,TID_TITLE_MASTERY_EVE,PlayerTitleGold
+TitleMasteryJanet,TID_TITLE_MASTERY_JANET,PlayerTitleGold
+TitleMasteryBonnie,TID_TITLE_MASTERY_BONNIE,PlayerTitleGold
+TitleMasteryOtis,TID_TITLE_MASTERY_OTIS,PlayerTitleGold
+TitleMasterySam,TID_TITLE_MASTERY_SAM,PlayerTitleGold
+TitleMasteryGus,TID_TITLE_MASTERY_GUS,PlayerTitleGold
+TitleMasteryBuster,TID_TITLE_MASTERY_BUSTER,PlayerTitleGold
+TitleMasteryChester,TID_TITLE_MASTERY_CHESTER,PlayerTitleGold
+TitleMasteryGray,TID_TITLE_MASTERY_GRAY,PlayerTitleGold
+TitleMasteryMandy,TID_TITLE_MASTERY_MANDY,PlayerTitleGold
+TitleMasteryRT,TID_TITLE_MASTERY_RT,PlayerTitleGold
+TitleMasteryWillow,TID_TITLE_MASTERY_WILLOW,PlayerTitleGold
+TitleMasteryMaisie,TID_TITLE_MASTERY_MAISIE,PlayerTitleGold
+TitleMasteryFishTank,TID_TITLE_MASTERY_HANK,PlayerTitleGold
+TitleMasteryDoug,TID_TITLE_MASTERY_DOUG,PlayerTitleGold
+TitleMasteryCordelius,TID_TITLE_MASTERY_CORDELIUS,PlayerTitleGold
+TitleMasteryPearl,TID_TITLE_MASTERY_PEARL,PlayerTitleGold
+TitleMasteryChuck,TID_TITLE_MASTERY_CHUCK,PlayerTitleGold
+TitleMasteryCharlie,TID_TITLE_MASTERY_CHARLIE,PlayerTitleGold
+TitleMasteryMiko,TID_TILE_MASTERY_MIKO,PlayerTitleGold
+TitleMasteryKit,TID_TILE_MASTERY_KIT,PlayerTitleGold
+TitleMasteryTwins,TID_TILE_MASTERY_TWINS,PlayerTitleGold
+TitleBP22,TID_TILE_BATTLEPASSPLUS_SEASON22,Plus
+TitleBP23,TID_TILE_BATTLEPASSPLUS_SEASON23,Plus
+TitleOtchim,TID_TILE_OTCHIM,Plus
+TitleTitan,TID_TILE_TITAN,Plus
+TitlePovilitel,TID_TILE_POV,Plus
+TitleGlOtchim,TID_TILE_GLOT,Plus
+TitleKiller,TID_TILE_KILLER,PlayerTitleGold
+TitleTyn,TID_TILE_TYN,Plus
+TitleOld,Олд,Plus
+TitleDev,Киллер,Plus
+TitleDev2,Молодой,Plus
+TitleDev1,Разработчик,Developer
+TitleTester,Тестер,Name7
+TitleLast,Честный,Plus
+TitleMedia,Ютубер,Plus
+TitleTitan,Настоящий Шуза,Plus
+TitleGeroi,Герой,PlayerTitleGold
+TitleSponsor,Спонсор,PlayerTitleGold
+TitleOld1,I'm the best,Plus
+TitleDev1,Токсик,Plus
+TitleDev21,Чемпион,Plus
+TitleDev11,Лучший,Plus
+TitleTester1,Пушер,Plus
+TitleLas1t,Лето,Plus
+TitleMedi1a,Зима,Plus
+TitleTita1n,Осень,Plus
+TitleGeroi1,Весна,PlayerTitleGold
+TitleSponso1r,Богач,PlayerTitleGold
+TitleOldOda,Джейсон Стетхем,Plus
+TitleDevOda,Бомж,Plus
+TitleDev2Oda,Без багажа,Plus
+TitleDev1Oda,Загадочный царь,Plus
+TitleTesteOdar,Не задрот,Plus
+TitleLastOda,Донатер,Plus
+TitleMediaOda,Лучший,Plus
+TitleTitanOda,Титан,Plus
+TitleGeroiOda,Рыцарь,PlayerTitleGold
+TitleSponsoOdar,200 IQ,PlayerTitleGold
+TitleOld1Oda,Кривой снайпер,Plus
+TitleDev1Oda,Эгоист,Plus
+TitleDev21Oda,Позитивный,Plus
+TitleDev11Oda,Сын рандома,Plus
+TitleTester1Oda,Фанат,Plus
+TitleLas1tOda,Кто я?,Plus
+TitleMedi1aOda,Тигр,Plus
+TitleTita1Odan,Танк,Plus
+TitleGeroi1Oda,Лев,PlayerTitleGold
+TitleSponso1rOda,Энергия,PlayerTitleGold
+TitleSponso1rOd1a,На все 100!,PlayerTitleGold
+TitleGeroiOda111,На позитиве!,PlayerTitleGold
+TitleGeroiOda11111,Всегда в туалете,PlayerTitleGold
+TitleGeroiOda12,Наш медведь,PlayerTitleGold
+TitleGeroiOda13,Бессмертный!,PlayerTitleGold
+TitleGeroiOda14,В надежде на лучшее!,PlayerTitleGold
+TitleGero12iOda,Держу кулаки,PlayerTitleGold
+TitleGer13oiOda,Дело мастера боится!,PlayerTitleGold
+TitleLastOda12,На ошибках учатся!,Plus
+TitleMediaOda13,Спортсмен,Plus
+Mathematic,Где труд, там и счастье.,PlayerTitleGold
+Mathematic1,Тише едешь - дальше будешь.,PlayerTitleGold
+Mathematic2,Водолаз!,PlayerTitleGold
+Gold1,Золотой,Plus
+Gold2,Я свободен!,Plus
+Zero1,Негр,PlayerTitleGold
+Zero2,Расчленитель токсиков,PlayerTitleGold
+Gold11,VIP,VIP
+Gold22,Премиальный игрок,Plus
+Zero11,В деле!,PlayerTitleGold
+Zero22,Бриллиантовый,PlayerTitleGold
+Gold12,Элита,Plus
+Gold22,Король,Plus
+Zero12,Стратег,PlayerTitleGold
+Zero22,Профи,PlayerTitleGold
+Gold13,Знаток,Plus
+Gold23,Главный токсик,Plus
+Zero13,Клоун,PlayerTitleGold
+Zero23,Магический,PlayerTitleGold
+Gold14,Талант,Plus
+Gold24,Дед инсайд,Plus
+Zero14,Эксперт,PlayerTitleGold
+Zero24,Высший,PlayerTitleGold
+Gold15,Безупречный,Plus
+Gold25,Картонка,Plus
+Zero15,Совершенный,PlayerTitleGold
+Zero25,Нагибатор,PlayerTitleGold
+Zero251,Президент ShuzaBrawl (Online),PlayerTitleGold
+Yes,Крипер,Plus
+Yes2,Местный авторитет,Plus
+Yes3,Неповторимый,PlayerTitleGold
+Yes4,Гроза,PlayerTitleGold
+Yes1,Солнце,Plus
+Yes21,Луна,Plus
+Yes31,Гуль,PlayerTitleGold
+Yes37,Нечего терять!,PlayerTitleGold
+Yes47,Хранитель снов,PlayerTitleGold
+Yes471,Безопасность!,PlayerTitleGold
+Yes474,Не копай в ночи,PlayerTitleGold
+Yes239,Minecraft,Plus
+Yes2311,Уставший,Plus
+Yes2322,Большой разум,Plus
+Yes2333,Читер,Plus
+Yes23444,Психология,Plus
+Yes2344477778877,Самый главный Шуза,Plus
+Yes2344477788887,Киллер,PlayerTitleGold
+Yes2344477797779957,Непогрешим,Plus
+Yes23444778283878887,Нуб,PlayerTitleGold
+Yes234447773727272877,Гоголь,PlayerTitleGold
+Yes2344478885556566777,Задрот,Plus
+PREMIUMTITULBYTHEQARDEN,Premium,Plus
+MVPTITULBYTHEQARDEN,MVP+,Plus
+TitleBP24,TID_TILE_BATTLEPASSPLUS_SEASON24,Name10
+UltraPlayer777777,Ультра Игрок,Name2
+hshjjje,Тирекс,Name8
+uueieiiwidieisiie88e88828,Царь,Name9
+indusbrawltitul196,С юморком,Name4
+customlove1,Купидон,PlayerTitleGold
+customlove2,Разбиваю сердца,PlayerTitleGold
+customlove3,Опасная симпатия,PlayerTitleGold
+TikTokkaa,ТикТокер,Plus
+customlove4,Сигма,PlayerTitleGold
+customlove5,Тарелочница,PlayerTitleGold
+customlove6,Волк,PlayerTitleGold
+usjejsjdjdj3jiz,Джава,Plus
+eejjeejjk,Testing,Plus
+jdkdkkkskskdksk,ieiiwide,Plus
+jjejjjsjk,swjsjejizwkz,Plus
+jejsjjjwkkxjezkekskk,iekskekskkdkwizie,Plus
+sosiew9ooeozoeos,ieisieiiwdie,Plus
+ieiwixiieso,ieiseks,Plus
+carjwisisiwi,Феникс,Картошка
+trio9w9w999s99ee9,Трио Мастер,ТриоМастер
+siqis8wiiwsewkskkdk,Веном,НетЛичнойЖизни
+jjsjjsjsiwiwiwsia8aiaooa09a99999999,Раб Шузы,Name8
+indusook53007,Шузер,Неудержимый
+rain882828,Rain√,Name6
+induscreatornewsystem,Creator,Name1
+cmcmmcmcm_КМ - Менеджер,Name4,

@@ -1,0 +1,27 @@
+# сборка
+bin/
+obj/
+run/
+run_stage/
+run_test/
+
+# секреты и данные живого сервера
+config.json
+logs/
+backups/
+TelegramLinks.json*
+daily_limits.json
+claimed_offers.json
+gems_transfers.json
+skin_claims.json
+vip_payments.json
+shop_offers.json
+mail_log.json
+admin_audit.log
+*.log
+
+# мусор от прежних версий
+*.bak
+*.backup
+*.deb
+.DS_Store

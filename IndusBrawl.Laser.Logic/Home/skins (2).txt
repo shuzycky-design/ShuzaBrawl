@@ -1,0 +1,786 @@
+№	Name		TID
+--------------------------------------------------
+1	string		string
+2	BanditGirlDefault		
+3	GunSlingerDefault		
+4	GunSlingerRockstar		TID_GUNSLINGER_ROCKSTAR_SKIN
+5	BullGuyDefault		
+6	RocketGirlDefault		
+7	RocketGirlBeach		TID_ROCKET_BEACH_SKIN
+8	TntGuyDefault		
+9	LuchadorDefault		
+10	TurretDefault		
+11	TrickshotDefault		
+12	CactusDefault		
+13	CactusPink		TID_CACTUS_PINK_SKIN
+14	BarkeepDefault		
+15	MechanicDefault		
+16	ShamanDefault		
+17	ShamanPanda		TID_SHAMAN_PANDA_SKIN
+18	ShamanBearDefault		
+19	ShamanBearPanda		
+20	UndertakerDefault		
+21	CrowDefault		
+22	CrowWhite		TID_CROW_WHITE_SKIN
+23	DeadMariachiDefault		
+24	BowDudeDefault		
+25	SniperDefault		
+26	MinigunDudeDefault		
+27	BullGuyHair		TID_BULL_HAIR_SKIN
+28	TrickshotGold		TID_TRICKSHOT_GOLD_SKIN
+29	BarkeepGold		TID_BARKEEP_GOLD_SKIN
+30	LuchadorRudo		TID_LUCHADOR_RUDO_SKIN
+31	BanditGirlBandita		TID_SHOTGUN_BANDITA_SKIN
+32	LuchadorRey		TID_LUCHADOR_KING_SKIN
+33	BallDefault		
+34	BlackholeDefault		
+35	HealstationDefault		
+36	BarrelbotDefault		
+37	BlackholePetDefault		
+38	TntPetDefault		
+39	RangedBotDefault		
+40	MeleeFastBotDefault		
+41	MeleeBotDefault		
+42	BossBotDefault		
+43	ArtilleryGalDefault		
+44	FrankDefault		
+45	ArtilleryTurretDefault		
+46	MechanicKnight		TID_MECHANIC_KNIGHT_SKIN
+47	FrankCaveman		TID_FRANK_CAVEMAN_SKIN
+48	TurretDragon		
+49	MechanicSummer		TID_MECHANIC_SUMMER_SKIN
+50	TurretSummertime		
+51	CrowPheonix		TID_CROW_PHEONIX_SKIN
+52	UndertakerGreaser		TID_UNDERTAKER_GREASER_SKIN
+53	BigBotDefault		
+54	BanditGirlPrereg		TID_SHOTGUN_STAR_SKIN
+55	LootBox		
+56	TntBox		
+57	Safe		
+58	TntGuySanta		TID_DYNAMIKE_SANTA_SKIN
+59	TntGuyChef		TID_DYNAMIKE_CHEF_SKIN
+60	RocketGirlBoombox		TID_BROCK_BOOMBOX_SKIN
+61	BarkeepWizard		TID_BARLEY_WIZARD_SKIN
+62	ShamanReindeer		TID_NITA_REINDEER_SKIN
+63	ArtilleryGalElf		TID_PENNY_ELF_SKIN
+64	NinjaDefault		
+65	UndertakerHat		TID_UNDERTAKER_HAT_SKIN
+66	BullGuyFootbull		TID_SKIN_FOOTBULL
+67	ShamanBearReindeer		
+68	ArtilleryTurretElf		
+69	HookDefault		
+70	TrickshotPopcorn		TID_SKIN_POPCORN_RICO
+71	GunSlingerHanbok		TID_SKIN_LUNAR_COLT
+72	BarrelbotCny		TID_SKIN_DUMPLING_DARRYL
+73	PocoValentine		TID_SKIN_VALENTINE_POCO
+74	RocketGirlCny		TID_SKIN_LUNAR_BROCK
+75	WhirlwindDefault		
+76	RoboWarsBox		
+77	UndertakerNightwitch		TID_UNDERTAKER_NIGHTWITCH_SKIN
+78	RoboWarsBaseDefault		
+79	RosaDefault		
+80	MineCart		
+81	ShamanShiba		TID_SHAMAN_SHIBA_SKIN
+82	ShamanBearShiba		
+83	BaseballDefault		
+84	MineCartB		
+85	MineCartC		
+86	MineCartD		
+87	MineCartE		
+88	ClusterBombDefault		
+89	ClusterBombPetDefault		
+90	ArtilleryGalBunny		TID_PENNY_BUNNY_SKIN
+91	ArtilleryTurretBunny		
+92	BarkeepMs		TID_BARLEY_MS_SKIN
+93	RocketGirlHotrod		TID_BROCK_HOTROD_SKIN
+94	BarkeepMaple		TID_BARLEY_MAPLE_SKIN
+95	WhirlwindRR		TID_CARL_RR_SKIN
+96	BoMecha		TID_BO_MECHA_SKIN
+97	CrowMecha		TID_CROW_MECHA_SKIN
+98	Cactusmecha		TID_SPIKE_ROBO_SKIN
+99	TntDudeMecha		TID_MIKE_ROBO_SKIN
+100	BowDudeMechaWhite		TID_BO_MECHA_LIGHT_SKIN
+101	BowDudeMechaGold		TID_BO_MECHA_GOLD_SKIN
+102	CrowMechaGold		TID_CROW_MECHA_GOLD_SKIN
+103	CrowMechaNight		TID_CROW_MECHA_NIGHT_SKIN
+104	BullDudeFootbullBlue		TID_BULL_LINEBACKER_SKIN
+105	GunslingerOutlaw		TID_COLT_OUTLAW_SKIN
+106	WhirlwindHogrider		TID_CARL_HOG_RIDER_SKIN
+107	BallBeach		
+108	ArcadeDefault		
+109	DamageBoosterDefault		
+110	SniperPink		TID_PIPER_PINK_SKIN
+111	ArcadeClassic		TID_8BIT_CLASSIC_SKIN
+112	NinjaShark		TID_LEON_SHARK_SKIN
+113	BlackHoleBlue		TID_TARA_BLUE_SKIN
+114	LootBoxMoonFestival		
+115	SandstormDefault		
+116	BeeSniperDefault		
+117	BossRaceBossDefault		
+118	BarkeepWizardRed		TID_BARLEY_RED_WIZARD_SKIN
+119	HookPirate		TID_GENE_PIRATE_SKIN
+120	Sandstormsleepy		TID_SANDY_SLEEPY_SKIN
+121	MummyDefault		
+122	Sniperrose		TID_PIPER_CALAVERA_SKIN
+123	SpawnerDudeDefault		
+124	ShotgunGirlWitch		TID_SHELLY_WITCH_SKIN
+125	MechanicKnightDark		TID_JESSIE_DARK_KNIGHT_SKIN
+126	TurretDragonDark		
+127	HammerDudeDJ		TID_FRANK_DJ_SKIN
+128	NinjaWolf		TID_LEON_WEREWOLF_SKIN
+129	SpeedyDefault		
+130	LuchadorBrown		TID_EL_PRIMO_BROWN_SKIN
+131	ef1bef78db93b8eaf0829e4478593a5c2af67dc9		
+132	TrickshotDudeTotal		TID_RICO_BETA_SKIN
+133	NinjaSally		TID_LEON_SALLY_SKIN
+134	WhirlwindLeonard		TID_CARL_LEONARD_SKIN
+135	TntDudeSantaRope		
+136	WhirlwindPirate		TID_CARL_CAPTAIN_SKIN
+137	GunslingerPirate		TID_COLT_CORSAIR_SKIN
+138	CtfGift		
+139	SpeedyGT		TID_MAX_BLUE_SKIN
+140	BeeSniperDefaultAddonBee		
+141	BeeSniperLadyBug		TID_BEA_LADYBUG_SKIN
+142	PocoPirate		TID_POCO_PIRATE_SKIN
+143	BeeSniperLadyBugAddonBee		
+144	DrillerDefault		
+145	ArcadeVirus		TID_8BIT_VIRUS_SKIN
+146	DamageBoosterVirus		
+147	BlackHoleStreetNinja		TID_TARA_STREET_NINJA_SKIN
+148	BaseballGamer		TID_BIBI_GAMER_SKIN
+149	SniperValentines		TID_PIPER_CUPID_SKIN
+150	ShamanKoala		TID_NITA_KOALA_SKIN
+151	ShamanBearKoala		
+152	SpawnerPetDefault		
+153	SpawnerDudeTurretDefault		
+154	SpawnerDudeAgentP		TID_MRP_AGENT_SKIN
+155	SpawnerPetAgentP		
+156	SpawnerDudeTurretAgentP		
+157	BlowerDefault		
+158	ControllerDefault		
+159	WallyDefault		
+160	BarrelBotFootball		TID_MASCOT_DARRYL_SKIN
+161	ShotgunGirlFootball		TID_PSG_SHELLY_SKIN
+162	TntDudeFootball		TID_COACH_MIKE_SKIN
+163	BallArena		
+164	MechanicTanuki		TID_TANUKI_JESSIE_SKIN
+165	BowDudeHorus		TID_HORUS_BO_SKIN
+166	BallArenaPSG		
+167	ArtilleryDudeDarkBunny		TID_BLACK_BUNNY_PENNY_SKIN
+168	ArtilleryTurretDarkBunny		
+169	MummyCollege		TID_COLLEGE_EMZ_SKIN
+170	BeeSniperSlowPotDefault		
+171	MechanicTurretTanuki		
+172	BowDudeTotemDefault		
+173	TrickshotDudeBazaar		TID_GUARD_RICO_SKIN
+174	HookDudeBazaar		TID_EVIL_GENE_SKIN
+175	UndertakerBazaar		TID_ROGUE_MORTIS_SKIN
+176	MechanicRedDragon		TID_RED_DRAGON_JESSIE_SKIN
+177	TurretRedDragon		
+178	DrillerConstructor		TID_CONSTRUCTOR_JACKY_SKIN
+179	WallyHawaii		TID_TROPICAL_SPROUT_SKIN
+180	BullDudeBarbking		TID_BARBARIAN_KING_BULL_SKIN
+181	MinigunDudeSummer		TID_HOLIDAY_PAM_SKIN
+182	BlowerTrader		TID_MERCHANT_GALE_SKIN
+183	ControllerDefaultAddon		
+184	HealingStationSummer		
+185	LuchadorGold		TID_TRUE_GOLD_EL_PRIMO_SKIN
+186	PowerLevelerDefault		
+187	MummyGold		TID_TRUE_GOLD_EMZ_SKIN
+188	MummySilver		TID_TRUE_SILVER_EMZ_SKIN
+189	LuchadorSilver		TID_TRUE_SILVER_EL_PRIMO_SKIN
+190	BeeSniperMonster		TID_MEGA_BEETLE_BEA_SKIN
+191	DrillerMonster		TID_ULTRA_DRILLER_JACKY_SKIN
+192	ClusterBombMonster		TID_KING_CRAB_TICK_SKIN
+193	BossKaijuDefault		
+194	BeeSniperMonsterAddonBee		
+195	SafeBank		
+196	ControllerRetro		TID_RETRO_NANI_SKIN
+197	ShotgunGirlGold		TID_TRUE_GOLD_SHELLY_SKIN
+198	ShotgunGirlSilver		TID_TRUE_SILVER_SHELLY_SKIN
+199	SniperGold		TID_TRUE_GOLD_PIPER_SKIN
+200	SniperSilver		TID_TRUE_SILVER_PIPER_SKIN
+201	NinjaGold		TID_TRUE_GOLD_LEON_SKIN
+202	NinjaSilver		TID_TRUE_SILVER_LEON_SKIN
+203	RocketGirlRanger		TID_SUPER_RANGER_BROCK_SKIN
+204	SpeedyTracksuit		TID_STREETWEAR_MAX_SKIN
+205	PowerLevelerKnight		TID_MECHA_PALADIN_SURGE_SKIN
+206	ClusterBombPetMonster		
+207	ControllerRetroAddon		
+208	PercenterDefault		
+209	FireDudeDefault		
+210	CactusMask		TID_MASK_SPIKE_SKIN
+211	MummyGiftShop		TID_SUPER_FAN_EMZ_SKIN
+212	SandstormGiftShop		TID_SUGAR_RUSH_SANDY_SKIN
+213	WallyMoon		TID_LUNAR_SPROUT_SKIN
+214	PercenterTrixie		TID_TRIXIE_COLETTE_SKIN
+215	LuchadorAtomic		TID_EL_ATOMICO_SKIN
+216	PocoStarr		TID_POCO_STARR_SKIN
+217	RosaRosaBrawloween		TID_BRAWLOWEEN_ROSA_SKIN
+218	BowDudeDemonic		TID_UNDERWORLD_BO_SKIN
+219	GunslingerPlayer		TID_CHALLENGER_COLT_SKIN
+220	BullDudeGold		TID_TRUE_GOLD_BULL_SKIN
+221	BullDudeSilver		TID_TRUE_SILVER_BULL_SKIN
+222	BarkeepTrueGold		TID_TRUE_GOLD_BARLEY_SKIN
+223	BarkeepTrueSilver		TID_TRUE_SILVER_BARLEY_SKIN
+224	BaseballZombibi		TID_ZOMBIBI_SKIN
+225	TrickshotDudeTrueGold		TID_TRUE_GOLD_RICO_SKIN
+226	TrickshotDudeSilver		TID_TRUE_SILVER_RICO_SKIN
+227	HammerDudeGold		TID_TRUE_GOLD_FRANK_SKIN
+228	HammerDudeSilver		TID_TRUE_SILVER_FRANK_SKIN
+229	UndertakerHatGold		TID_TRUE_GOLD_MORTIS_SKIN
+230	UndertakerGold		TID_TRUE_GOLD_MORTIS_SKIN
+231	UndertakerHatSilver		TID_TRUE_SILVER_MORTIS_SKIN
+232	UndertakerSilver		TID_TRUE_SILVER_MORTIS_SKIN
+233	IceDudeDefault		
+234	SpeedyLine		TID_CONY_MAX_SKIN
+235	ControllerLine		TID_SALLY_NANI_SKIN
+236	SniperLine		TID_CHOCO_PIPER_SKIN
+237	ControllerLineAddon		
+238	TntDudeSnowtel		TID_BELLHOP_MIKE_SKIN
+239	IceDudeKing		TID_KING_LOU_SKIN
+240	SafeRed		
+241	SnakeOilDefault		
+242	EnragerDefault		
+243	BlowerNutcracker		TID_GALE_NUTCRACKER
+244	RocketGirlOg		TID_OLD_SCHOOL_BROCK
+245	ClusterBombDudeSnowman		TID_SNOWMAN_TICK
+246	HammerDudeXmas		TID_HOLIDAY_PARTY_FRANK
+247	BowDudeWarrior		TID_WARRIOR_BO_SKIN
+248	ClusterBombDudeGold		TID_TRUE_GOLD_TICK_SKIN
+249	ClusterBombDudeSilver		TID_TRUE_SILVER_TICK_SKIN
+250	CrowGold		TID_TRUE_GOLD_CROW_SKIN
+251	CrowSilver		TID_TRUE_SILVER_CROW_SKIN
+252	BarrelBotGold		TID_TRUE_GOLD_DARRYL_SKIN
+253	BarrelBotSilver		TID_TRUE_SILVER_DARRYL_SKIN
+254	ClusterBombPetSnowman		
+255	MechanicGold		TID_TRUE_GOLD_JESSIE_SKIN
+256	MechanicSilver		TID_TRUE_SILVER_JESSIE_SKIN
+257	MechanicGoldTurret		
+258	MechanicSilverTurret		
+259	ClusterBombPetGold		
+260	ClusterBombPetSilver		
+261	BlackHoleGold		TID_TRUE_GOLD_TARA_SKIN
+262	BlackHoleSilver		TID_TRUE_SILVER_TARA_SKIN
+263	RuffsDefault		
+264	BullDudeOx		TID_SPACE_OX_BULL_SKIN
+265	CactusLord		TID_DARK_LORD_SPIKE_SKIN
+266	BarrelBotLaser		TID_D4R-RY1_SKIN
+267	RollerDefault		
+268	IceDudeCrooner		TID_SMOOTH_LOU_SKIN
+269	WhirlwindDarkTide		TID_DARK_TIDE_CARL_SKIN
+270	RuffsRonin		TID_RONIN_RUFFS_SKIN
+271	RuffsCoverDefault		
+272	PercenterCrew		TID_NAVIGATOR_COLETTE_SKIN
+273	ElectroSniperDefault		
+274	StickyBombDefault		
+275	BaseballVigilante		TID_BIBILANTE_SKIN
+276	ArtilleryDudeSmuggler		TID_SMUGGLER_PENNY_SKIN
+277	ArtilleryDudeSmugglerTurret		
+278	TntDudePsg		TID_PSG_MIKE_SKIN
+279	RollerWhite		TID_SUPERSTAR_STU_SKIN
+280	CrossBomberDefault		
+281	SpeedBoosterDefault		
+282	FireDudeMasked		TID_AMBER_DE_LA_VEGA_SKIN
+283	EnragerDuel		TID_QUICK_DRAW_EDGAR_SKIN
+284	BlackHoleMisfortune		TID_MISFORTUNE_TARA_SKIN
+285	ArcadePiano		TID_SALOON_8BIT_SKIN
+286	BeeSniperCat		TID_NEKO_BEA_SKIN
+287	BeeSniperCatGold		TID_GOLD_NEKO_BEA_SKIN
+288	RuffsMarshall		TID_MARSHAL_RUFFS_SKIN
+289	SandstormLantern		TID_LANTERN_SANDY_SKIN
+290	RopeDudeDefault		
+291	AssaultShotgunDefault		
+292	BeeSniperArchvillain		TID_ARCHVILLAIN_BEA_SKIN
+293	BeeSniperArchvillainAddonBee		
+294	PowerLevelerDIY		TID_DYI_SURGE_SKIN
+295	DamageBoosterPiano		
+296	ElectroSniperBoss		TID_BELLE_GOLDHAND_SKIN
+297	BeeSniperCatAddonBee		
+298	BeeSniperCatGoldAddonBee		
+299	ShamanGold		TID_TRUE_GOLD_NITA_SKIN
+300	ShamanSilver		TID_TRUE_SILVER_NITA_SKIN
+301	ShamanBearGold		
+302	ShamanBearSilver		
+303	CactusGold		TID_TRUE_GOLD_SPIKE
+304	CactusSilver		TID_TRUE_SILVER_SPIKE
+305	GunslingerBadass		TID_GUNSLINGER_COLT_SKIN
+306	HookDudeGold		TID_TRUE_GOLD_GENE
+307	HookDudeSilver		TID_TRUE_SILVER_GENE
+308	IceDudeBurger		TID_BURGER_LOU_SKIN
+309	DrillerJetski		TID_JETSKI_JACKY_SKIN
+310	WhirlwindSurfer		TID_SURFER_CARL_SKIN
+311	RosaCoco		TID_COCO_ROSA_SKIN
+312	SpeedyHermes		TID_HERMES_MAX_SKIN
+313	UndertakerBeach		TID_BEACHTIME_MORTIS_SKIN
+314	NinjaDino		TID_DINO_LEON_SKIN
+315	UseMe1		
+316	TntDudeFlamengo		TID_FLAMENGO_MIKE_SKIN
+317	TntDudeLduQuito		TID_LDU_QUITO_MIKE_SKIN
+318	TntDudeChivas		TID_CHIVAS_MIKE_SKIN
+319	LuchadorUniversitario		TID_UNIVERSITARIO_PRIMO_SKIN
+320	LuchadorClubNacional		TID_NACIONAL_PRIMO_SKIN
+321	LuchadorCorinthians		TID_CORINTHIANS_PRIMO_SKIN
+322	ShotgunGirlBocaJuniors		TID_BOCA_SHELLY_SKIN
+323	ShotgunGirlAmerica		TID_AMERICA_SHELLY_SKIN
+324	ShotgunGirlUDeChile		TID_UDC_SHELLY_SKIN
+325	GunSlingerRiverPlate		TID_RIVER_PLATE_COLT_SKIN
+326	GunSlingerCerroPorteno		TID_CERRO_PORTENO_COLT_SKIN
+327	GunSlingerAtlNacional		TID_ATL_NACIONAL_COLT_SKIN
+328	GunslingerClubAmerica		TID_CLUB_AMERICA_COLT_SKIN
+329	HealstationGold		
+330	HealstationSilver		
+331	UseMe4		
+332	GunslingerTrueGold		TID_TRUE_GOLD_COLT_SKIN
+333	GunslingerTrueSilver		TID_TRUE_SILVER_COLT_SKIN
+334	SpawnerDudeTrueGold		TID_TRUE_GOLD_MRP_SKIN
+335	SpawnerDudeTrueSilver		TID_TRUE_SILVER_MRP_SKIN
+336	SpawnerPetTrueGold		
+337	SpawnerDudeTurretTrueGold		
+338	SpawnerPetTrueSilver		
+339	SpawnerDudeTurretTrueSilver		
+340	Trophy		
+341	TrophyBlueRed		
+342	Volleyball		
+343	Basketball		
+344	DeadMariachiPunk		TID_PUNK_POCO_SKIN
+345	RopeDudePunk		TID_PUNK_BUZZ_SKIN
+346	BaseballWarrior		TID_PUNK_BIBI_SKIN
+347	RollerPunk		TID_PUNK_STU_SKIN
+348	ShamanSummer		TID_WHALEWATCH_NITA_SKIN
+349	ShamanBearSummer		
+350	CactusCoverDefault		
+351	NinjaInvisibleAreaDefault		
+352	BarrelBotMegabox		TID_MB_DARRYL_SKIN
+353	StuDrums		
+354	KnightDefault		
+355	LuchadorDragon		TID_EL_DRAGON_VERDE_SKIN
+356	MinigunDudeQueen		TID_EVIL_QUEEN_PAM_SKIN
+357	HealingstationQueen		
+358	BarkeepUnicorn		TID_UNICORN_KNIGHT_BARLEY_SKIN
+359	SnakeOilWizard		TID_WIZARD_BYRON_SKIN
+360	ShotgunGirlPrincess		TID_PRINCESS_SHELLY_SKIN
+361	LuchadorDragonChroma		TID_EL_DRAGON_ROSADO_SKIN
+362	MechaDudeDefault		
+363	MechaDudeBigDefault		
+364	BowDudeGold		TID_TRUE_GOLD_BO_SKIN
+365	BowDudeSilver		TID_TRUE_SILVER_BO_SKIN
+366	BeeSniperGold		TID_TRUE_GOLD_BEA_SKIN
+367	BeeSniperSilver		TID_TRUE_SILVER_BEA_SKIN
+368	BlowerSilver		TID_TRUE_SILVER_GALE_SKIN
+369	BlowerGold		TID_TRUE_GOLD_GALE_SKIN
+370	ControllerGold		TID_TRUE_GOLD_NANI_SKIN
+371	ControllerSilver		TID_TRUE_SILVER_NANI_SKIN
+372	SandstormGold		TID_TRUE_GOLD_SANDY_SKIN
+373	SandstormSilver		TID_TRUE_SILVER_SANDY_SKIN
+374	BeeSniperGoldAddonBee		
+375	BeeSniperSilverAddonBee		
+376	ControllerGoldAddon		
+377	ControllerSilverAddon		
+378	GunslingerHeist		TID_HANDSOME_COLT_SKIN
+379	UseMe5		
+380	WallyPrince		TID_EMERALD_PRINCE_SPROUT_SKIN
+381	StickyBombVeteran		TID_VETERAN_SQUEAK_SKIN
+382	KnightNinja		TID_NINJA_ASH_SKIN
+383	SniperMoon		TID_LUNAR_PIPER_SKIN
+384	WallyPrinceChroma		TID_RUBY_PRINCE_SPROUT_SKIN
+385	KnightPetDefault		
+386	KnightPetNinja		
+387	RopeDudeDirector		TID_DIRECTOR_BUZZ_SKIN
+388	BlowerBusters		TID_SQUEAKBUSTER_GALE_SKIN
+389	HookDudeSwamp		TID_SWAMP_GENE_SKIN
+390	CrowSuper		TID_CAPTAIN_CROW_SKIN
+391	PercenterGladiator		TID_GLADIATOR_COLETTE_SKIN
+392	StickyBombPotato		TID_POTATO_SQUEAK_SKIN
+393	BullDudeTerminator		TID_B800_BULL_SKIN
+394	MechanicThief		TID_CAT_BURGLAR_JESSIE_SKIN
+395	MechanicTurretThief		
+396	TrickshotDudeChicken		TID_CHICKEN_RICO_SKIN
+397	TntDudeToxic		TID_RANCID_MIKE_SKIN
+398	DuplicatorDefault		
+399	RocketGirlSilver		TID_TRUE_SILVER_BROCK_SKIN
+400	RocketGirlGold		TID_TRUE_GOLD_BROCK_SKIN
+401	ArcadeSilver		TID_TRUE_SILVER_8-BIT_SKIN
+402	ArcadeGold		TID_TRUE_GOLD_8-BIT_SKIN
+403	SpeedySilver		TID_TRUE_SILVER_MAX_SKIN
+404	SpeedyGold		TID_TRUE_GOLD_MAX_SKIN
+405	DeadMariachiGold		TID_TRUE_GOLD_POCO_SKIN
+406	DeadMariachiSilver		TID_TRUE_SILVER_POCO_SKIN
+407	MechaDudeBigDefaultAddon		
+408	ArcadeRetropolis		TID_V8-BIT_SKIN
+409	DamageBoosterRetropolis		
+410	MinigunDudeGold		TID_TRUE_GOLD_PAM_SKIN
+411	MinigunDudeSilver		TID_TRUE_SILVER_PAM_SKIN
+412	DamageBoosterGold		
+413	DamageBoosterSilver		
+414	SpawnerDudeDracula		TID_COUNT_PENGULA_MRP_SKIN
+415	SpawnerDudeTurretDracula		
+416	SpawnerPetDracula		
+417	StickyBombGhost		TID_GHOST_SQUEAK_SKIN
+418	PowerLevelerKong		TID_SURGE_KONG_SKIN
+419	RollerHeadless		TID_HEADLESS_RIDER_STU_SKIN
+420	KickerDudeDefault		
+421	BaseballGold		TID_TRUE_GOLD_BIBI_SKIN
+422	BaseballSilver		TID_TRUE_SILVER_BIBI_SKIN
+423	WhirlwindGold		TID_TRUE_GOLD_CARL_SKIN
+424	WhirlwindSilver		TID_TRUE_SILVER_CARL_SKIN
+425	FireDudeGold		TID_TRUE_GOLD_AMBER_SKIN
+426	FireDudeSilver		TID_TRUE_SILVER_AMBER_SKIN
+427	PercenterGold		TID_TRUE_GOLD_COLETTE_SKIN
+428	PercenterSilver		TID_TRUE_SILVER_COLETTE_SKIN
+429	TntDudeGold		TID_TRUE_GOLD_DYNAMIKE_SKIN
+430	TntDudeSilver		TID_TRUE_SILVER_DYNAMIKE_SKIN
+431	SpawnerDudeDraculaBrawliwood		
+432	DuplicatorChola		TID_CHOLLA_SKIN
+433	4ef885e8233982730ee9251f8346a0ea843a8546		
+434	e149761d50424697c7a3c7b94a99d85da59e7c24		
+435	BarkeepDrunken		TID_DRUNKEN_MASTER_BARLEY_SKIN
+436	EnragerSnake		TID_EDGAR_SERPENT_SKIN
+437	LuchadorTiger		TID_EL_PRIMO_TIGER_SKIN
+438	ShamanDragon		TID_NIAN_NITA_SKIN
+439	LuchadorCorazon		TID_EL_PRIMO_VALENTINES
+440	45f335e0e6258ff7ea857ed4e080ab20c03f7c32		
+441	cd4ea046e9752441fd9f32094207b64d5f5e41d6		
+442	DrillerGift		TID_XMAS_GIFT_JACKY_SKIN
+443	BowDudeSanta		TID_SANTA_BO_SKIN
+444	RosaBP		TID_ROSA_MILITARY_SKIN
+445	CactusLog		TID_LOG_SPIKE_SKIN
+446	DrillerGold		TID_TRUE_GOLD_JACKY_SKIN
+447	DrillerSilver		TID_TRUE_SILVER_JACKY_SKIN
+448	IceDudeGold		TID_TRUE_GOLD_LOU_SKIN
+449	IceDudeSilver		TID_TRUE_SILVER_LOU_SKIN
+450	ArtilleryDudeGold		TID_TRUE_GOLD_PENNY_SKIN
+451	ArtilleryDudeSilver		TID_TRUE_SILVER_PENNY_SKIN
+452	RosaGold		TID_TRUE_GOLD_ROSA_SKIN
+453	RosaSilver		TID_TRUE_SILVER_ROSA_SKIN
+454	SafeVoxel		
+455	AssaultShotgunSled		TID_GRIFF_SLEIGH_SKIN
+456	CrossBomberVisionTowerDefault		
+457	KickerDudeFurious		TID_FURIOUS_FANG_SKIN
+458	ShamanPetDragon		
+459	TntDudeRetro		TID_CLASSIC MIKE_SKIN
+460	ArtilleryDudeTurretTrueGold		
+461	ArtilleryDudeTurretTrueSilver		
+462	FleaDefault		
+463	FleaPetDefault		
+464	FleaBigEggDefault		
+465	ClusterBombDudeShooky		TID_BT21_TICK_SKIN
+466	ClusterBombPetShooky		
+467	BaseballRj		TID_BT21_BIBI_SKIN
+468	SandstormKoya		TID_BT21_SANDY_SKIN
+469	EnragerVine		TID_DOCTOR_EDGAR_SKIN
+470	TrickshotDudeFirefly		TID_FIREFLY_RICO_SKIN
+471	MechaDudeRhino		TID_STAG_BEETLE_MEG_SKIN
+472	MechaDudeBigRhino		
+473	BullDudeLion		TID_SAVAGE_BULL_SKIN
+474	BowDudeWasp		TID_WASP_BO_SKIN
+475	SpawnerDudeFly		TID_MR_FLY_SKIN
+476	SpawnerDudeTurretFly		
+477	SpawnerPetFly		
+478	CrossBomberEaster		TID_BUNNY_GROM_SKIN
+479	RosaMantis		TID_MANTIS_ROSA_SKIN
+480	FleaSpaceCactus		TID_SPIKY_EVE_SKIN
+481	FleaPetSpaceCactus		
+482	FleaBigEggSpaceCactus		
+483	PayloadDefault		
+484	WallyWeirdPlant		TID_CORRUPTED_SPROUT_SKIN
+485	ElectroSniperPlanthunter		TID_IVY_BELLE_SKIN
+486	RuffsGold		TID_TRUE_GOLD_RUFFS_SKIN
+487	RuffsSilver		TID_TRUE_SILVER_RUFFS_SKIN
+488	Wallygold		TID_TRUE_GOLD_SPROUT_SKIN
+489	Wallysilver		TID_TRUE_SILVER_SPROUT_SKIN
+490	RopeDudeGold		TID_TRUE_GOLD_BUZZ_SKIN
+491	RopeDudeSilver		TID_TRUE_SILVER_BUZZ_SKIN
+492	PowerLevelerGold		TID_TRUE_GOLD_SURGE_SKIN
+493	PowerLevelerSilver		TID_TRUE_SILVER_SURGE_SKIN
+494	MechaDudeBigRhinoAddon		
+495	BallLava		
+496	JetpackGirlDefault		
+497	BullDudeMang		TID_BT21_BULL_SKIN
+498	CannonGirlDefault		
+499	CannonGirlSmallDefault		
+500	JetpackGirlDamageTowerDefault		
+501	DrillerCooky		TID_BT21_JACKY_SKIN
+502	EnragerTata		TID_BT21_EDGAR_SKIN
+503	WhirlwindBiker		TID_BIKER_CARL_SKIN
+504	CactusFireproof		TID_PYRO_SPIKE_SKIN
+505	DuplicatorVillain		TID_GALAXY_STORM_LOLA_SKIN
+506	BarrelBotCrash		TID_CRASH_TEST_DARRYL_SKIN
+507	SnakeOilVillain		TID_OVERLORD_BYRON_SKIN
+508	SpawnerDudeDaruma		TID_DARUMA_MRP_SKIN
+509	SpawnerDudeTurretDaruma		
+510	SpawnerPetDaruma		
+511	BlackHoleDevious		TID_TEMPEST_TARA_SKIN
+512	MechaDudeMonsterTruck		TID_MONSTER_TRUCK_MEG_SKIN
+513	MechaDudeBigMonsterTruck		
+514	BallPinball		
+515	MechaDudeBigMonsterTruckAddon		
+516	CannonGirlVillain		TID_EMPRESS_BONNIE_SKIN
+517	CannonGirlSmallVillain		
+518	MechaDudeReloadTowerDefault		
+519	ElectroSniperGold		TID_TRUE_GOLD_BELLE_SKIN
+520	ElectroSniperSilver		TID_TRUE_SILVER_BELLE_SKIN
+521	RollerGold		TID_TRUE_GOLD_STU_SKIN
+522	RollerSilver		TID_TRUE_SILVER_STU_SKIN
+523	KnightGold		TID_TRUE_GOLD_ASH_SKIN
+524	KnightSilver		TID_TRUE_SILVER_ASH_SKIN
+525	DuplicatorGold		TID_TRUE_GOLD_LOLA_SKIN
+526	DuplicatorSilver		TID_TRUE_SILVER_LOLA_SKIN
+527	MechaDudeGold		TID_TRUE_GOLD_MEG_SKIN
+528	MechaDudeSilver		TID_TRUE_SILVER_MEG_SKIN
+529	MechaDudeBigGold		
+530	MechaDudeBigSilver		
+531	JetpackGirlValkyrie		TID_VALKYRIE_JANET_SKIN
+532	MechaDudeBigSilverAddon		
+533	MechaDudeBigGoldAddon		
+534	RuffsChimmy		TID_BT21_RUFFS_SKIN
+535	SilencerDefault		
+536	RocketGirlDelivery		TID_POSTAL_BROCK_SKIN
+537	MummyDj		TID_MAKE_EMZ_SKIN
+538	SafeDeepsea		
+539	GunslingerPaintball		TID_SHARK_JAW_COLT_SKIN
+540	SilencerPharaoh		TID_PHARA_OTIS_SKIN
+541	ElectroSniperCoral		TID_CORAL_BELLE_SKIN
+542	KickerDudeOcto		TID_OCTO_FANG_SKIN
+543	SilencerDefaultAddonStarfish		
+544	CrossBomberGold		TID_TRUE_GOLD_GROM_SKIN
+545	CrossBomberSilver		TID_TRUE_SILVER_GROM_SKIN
+546	FleaGold		TID_TRUE_GOLD_EVE_SKIN
+547	FleaSilver		TID_TRUE_SILVER_EVE_SKIN
+548	JetpackGirlGold		TID_TRUE_GOLD_JANET_SKIN
+549	JetpackGirlSilver		TID_TRUE_SILVER_JANET_SKIN
+550	CannonGirlGold		TID_TRUE_GOLD_BONNIE_SKIN
+551	CannonGirlSilver		TID_TRUE_SILVER_BONNIE_SKIN
+552	KickerDudeGold		TID_TRUE_GOLD_FANG_SKIN
+553	KickerDudeSilver		TID_TRUE_SILVER_FANG_SKIN
+554	ArtilleryDudeCoverDefault		
+555	SilencerPharaohAddonStarfish		
+556	CannonGirlSmallGold		
+557	CannonGirlSmallSilver		
+558	MinigunDudeBroker		TID_BROKER_PAM_SKIN
+559	NinjaGhost		TID_BRAWLOWEEN_LEON_SKIN
+560	UndertakerMecha		TID_MECHA_MORIS_SKIN
+561	WeaponThrowerDefault		
+562	SoulCollectorDefault		
+563	CrowVulture		TID_OUTLAW_CROW
+564	DeadMariachiOutlaw		TID_OUTLAW_POCO_SKIN
+565	WeaponThrowerEmperor		TID_CAESAR_BRONSON_SKIN
+566	BossBotOld		
+567	MeleeBotOld		
+568	RangedBotOld		
+569	MeleeFastBotOld		
+570	DuplicatorOutlaw		TID_OUTLAW_LOLA_SKIN
+571	StickyBombRabbit		TID_MOON_FESTIVAL_SQUEAK_SKIN
+572	AssaultShotgunGold		TID_TRUE_GOLD_GRIFF_SKIN
+573	AssaultShotgunSilver		TID_TRUE_SILVER_GRIFF_SKIN
+574	EnragerGold		TID_TRUE_GOLD_EDGAR_SKIN
+575	EnragerSilver		TID_TRUE_SILVER_EDGAR_SKIN
+576	SilencerGold		TID_TRUE_GOLD_OTIS_SKIN
+577	SilencerSilver		TID_TRUE_SILVER_OTIS_SKIN
+578	SnakeOilGold		TID_TRUE_GOLD_BYRON_SKIN
+579	SnakeOilSilver		TID_TRUE_SILVER_BRYON_SKIN
+580	StickyBombGold		TID_TRUE_GOLD_SQUEAK_SKIN
+581	StickyBombSilver		TID_TRUE_SILVER_SQUEAK_SKIN
+582	HealingStationBroker		
+583	UndertakerChromaLight		TID_LIGHT_MECHA_MORTIS_SKIN
+584	UndertakerChromaDark		TID_DARK_MECHA_MORTIS_SKIN
+585	KnightPizza		TID_BRICK_OVEN_ASH_SKIN
+586	KnightPetPizza		
+587	BarrelBotOmegabox		TID_MEGA_MEGABOX_DARRYL_SKIN
+588	ShieldTankDefault		
+589	CrossBomberFranken		TID_GHOST_TRAIN_GROM_SKIN
+590	PercenterInspector		TID_GHOST_TRAIN_COLETTE_SKIN
+591	ArtilleryDudeZombie		TID_GHOST_METRO_PENNY_SKIN
+592	ArtilleryDudeTurretZombie		
+593	RocketGirlGhost		TID_ZOMBIE_BROCK_SKIN
+594	BlackHoleWorldfinal		TID_BSWF22_TARA_SKIN
+595	JetpackGirlTopgun		TID_TOPGUN_JANET_SKIN
+596	ShieldTankChainsaw		TID_CHAINSAW_BUSTER_SKIN
+597	JesterDefault		
+598	BarrelBotCupcake		TID_CUPCAKE_DARRYL_SKIN
+599	FireDudeFrost		TID_FROST_QUEEN_AMBER_SKIN
+600	DoorManDefault		
+601	KnightPinata		TID_PINATA_ASH_SKIN
+602	KnightPetPinata		
+603	BeamerDefault		
+604	RopeDudeLollipop		TID_BUZZETTE_SKIN
+605	KnightKrampus		TID_KRAMPUS_ASH_SKIN
+606	KnightPetKrampus		
+607	WeaponThrowerYeti		TID_YETI_SAM_SKIN
+608	ShamanGummybear		TID_GUMMYBEAR_NITA_SKIN
+609	ShamanPetGummybear		
+610	BeamerLavaQueen		TID_MAGMA_MANDY_SKIN
+611	JesterGhost		TID_DARK_CHESTER_SKIN
+612	AssaultShotgunArcade		TID_ARCADE_GRIFF_SKIN
+613	FleaBiker		TID_RIDER_EVE_SKIN
+614	ShotgunGirloldschool		TID_CLASSIC_SHELLY_SKIN
+615	BeamerMC		TID_MC_MANDY_SKIN
+616	DoorManRunaway		TID_RUNAWAY_GRAY_SKIN
+617	SoulCollectorworldfinals		TID_WF_GUS_SKIN
+618	FleaPetBiker		
+619	FleaBigEggBiker		
+620	WeaponThrowerValentines		TID_TEDDY_SAM_SKIN
+621	HammerDudeknight		TID_SPIRIT_KNIGHT_FRANK_SKIN
+622	DuplicatorKitsune		TID_KITSUNE_LOLA_SKIN
+623	SilencerOni		TID_ONI_OTIS_SKIN
+624	TntDudeTengu		TID_TENGU_MIKE_SKIN
+625	SilencerOniAddonStarfish		
+626	DoorManDetective		TID_DETECTIVE_GRAY_SKIN
+627	BullDudeAlleycat		TID_ALLEYCAT_BULL_SKIN
+628	SniperMariposa		TID_MARIPOSA_PIPER_SKIN
+629	SplitterDefault		
+630	SplitterLegsDefault		
+631	PuppeteerDefault		
+632	LuchadorButler		TID_EL_MAYORDOMO_SKIN
+633	JetpackGirlPopstar		TID_POPSTAR_JANET_SKIN
+634	ControllerEaster		TID_BELL_NANI_SKIN
+635	ControllerEasterAddon		
+636	WhirlwindRamadan		TID_MAGIC_CARPET_CARL_SKIN
+637	DoorManDoorManDetectiveChroma		TID_DETECTIVE_GRAY_NOIR_SKIN
+638	SplitterCultist		TID_CRIMSON_RT_SKIN
+639	SplitterPolice		TID_ROTOCOP_SKIN
+640	PuppeteerAxl		TID_AXL_WILLOW_SKIN
+641	BeamerGold		TID_TRUE_GOLD_MANDY_SKIN
+642	SplitterLegsCultist		
+643	SplitterLegsPolice		
+644	BeamerSilver		TID_TRUE_SILVER_MANDY_SKIN
+645	ShieldTankGold		TID_TRUE_GOLD_BUSTER_SKIN
+646	ShieldTankSilver		TID_TRUE_SILVER_BUSTER_SKIN
+647	SoulCollectorGold		TID_TRUE_GOLD_GUS_SKIN
+648	SoulCollectorSilver		TID_TRUE_SILVER_GUS_SKIN
+649	JesterGold		TID_TRUE_GOLD_CHESTER_SKIN
+650	JesterSilver		TID_TRUE_SILVER_CHESTER_SKIN
+651	WeaponThrowerGold		TID_TRUE_GOLD_SAM_SKIN
+652	WeaponThrowerSilver		TID_TRUE_SILVER_SAM_SKIN
+653	DoorManGold		TID_TRUE_GOLD_GRAY_SKIN
+654	DoorManSilver		TID_TRUE_SILVER_GRAY_SKIN
+655	ClusterBombDudeCerberus		TID_CERBERUS_TICK_SKIN
+656	ClusterBombPetCerberus		
+657	ControllerAres		TID_ARES_NANI_SKIN
+658	RocketGirlZeus		TID_ZEUS_BROCK_SKIN
+659	MummyHarajuku		TID_HARAJUKU_EMZ_SKIN
+660	ControllerAresAddon		
+661	BaseballBubblegum		TID_BUBBLEGUM_BIBI_SKIN
+662	NinjaCat		TID_CAT_LEON_SKIN
+663	MechaDudeJaguar		TID_JAGUAR_MEG_SKIN
+664	MechaDudeBigJaguar		
+665	RopeDudeKaiju		TID_KAIJU_BUZZ_SKIN
+666	MaisieDefault		
+667	FishTankDefault		
+668	WhirlwindGoblin		TID_GOBLIN_CARL_SKIN
+669	SpeedyLeopard		TID_LEOPARD_MAX_SKIN
+670	ShieldTankCroc		TID_CROCODILE_BUSTER_SKIN
+671	GunslingerMonkey		TID_MONKEY_COLT_SKIN
+672	EnragerVigilante		TID_VIGILANTE_EDGAR_SKIN
+673	SpeedyBlackPanther		TID_PANTHER_MAX_SKIN
+674	MechaDudeBigJaguarAddon		
+675	MaisieMaisieCyber		TID_TECH_MAISIE_SKIN
+676	FishTankShark		TID_SHARK_HANK_SKIN
+677	MaisieSnake		TID_JUNGLE_QUEEN_MAISIE_SKIN
+678	DuelistDefault		
+679	ReviverDefault		
+680	IceDudeStonetroll		TID_STONE_TROLL_LOU_SKIN
+681	AssaultShotgunTreasure		TID_CHEST_GRIFF_SKIN
+682	JesterWoodspirit		TID_WOOD_SPIRIT_CHESTER_SKIN
+683	ArcadeHauntedHouse		TID_HAUNTED_HOUSE_8BIT_SKIN
+684	BaseballPirate		TID_PIRATE_BIBI_SKIN
+685	MechaDudePirate		TID_SHARK_MEG_SKIN
+686	MechaDudeBigPirate		
+687	MechaDudeBigPirateAddon		
+688	CannonGirlUnicorn		TID_UNICORN_BONNIE_SKIN
+689	CannonGirlSmallUnicorn		
+690	DamageBoosterHauntedHouse		
+691	PowerLevelerKraken		TID_KRAKEN_SURGE_SKIN
+692	JetpackGirlDarkFairy		TID_DARK_FAIRY_JANET_SKIN
+693	CannonGirlSoccer		TID_FOOTBALL_BONNIE_SKIN
+694	CannonGirlSmallSoccer		
+695	ReviverDraco		TID_DRAGON_DOUG_SKIN
+696	DuelistToxic		TID_POISON_SPORE_CORDELIUS_SKIN
+697	DuelistBrain		TID_BIG_BRAIN_CORDELIUS_SKIN
+698	CookerDefault		
+699	ConductorDefault		
+700	StickyBombUniversity		TID_SQUEAK_NERD_SKIN
+701	RosaUniversity		TID_ROSA_CHEERLEADER_SKIN
+702	FishTankWasteland		TID_HANK_RODEO_SKIN
+703	RollerUniversity		TID_STU_JOCK_SKIN
+704	MaisieWasteland		TID_MAISIE_MARAUDER_SKIN
+705	PuppeteerWasteland		TID_WILLOW_SCORPION_SKIN
+706	DuelistWasteland		TID_CORDELIUS_RAIDER_SKIN
+707	Beamerharvest		TID_MANDY_HARVEST_FEST_SKIN
+708	UndertakerUndertakerHockey		TID_HOCKEY_MORTIS_SKIN
+709	JetpackGirlMoon		TID_JANET_MOON_FEST_SKIN
+710	EnragerMecha		TID_EDGAR_MECHA_SKIN
+711	CookerRare		TID_PEARL_VINTAGE_SKIN
+712	ConductorRare		TID_CHUCK_RARE_SKIN
+713	CookerDeepsea		TID_PEARL_SUBMARINE_SKIN
+714	CrossBomberHindu		TID_DASIS_GROM_SKIN
+715	BowDudeHindu		TID_SUPREME_BO_SKIN
+716	HammerDudeHindu		TID_VANARA_FRANK_SKIN
+717	WeaponThrowerDarkcircus		TID_DARK_CLOWN_SAM_SKIN
+718	EnragerEnragerMecha01		TID_MECHA_EDGAR_01_SKIN
+719	EnragerEnragerMecha00		TID_MECHA_EDGAR_00_SKIN
+720	SnakeOilDarkcircus		TID_RINGMASTER_BYRON_SKIN
+721	CocoonerDefault		
+722	CocoonerCocoonDefault		
+723	CocoonerPetDefault		
+724	ShotgunGirlBrawloween		TID_HOOT_HOOT_SHELLY_SKIN
+725	ShamanDarkcircus		TID_TUSKED_NITA_SKIN
+726	ShamanPetDarkcircus		
+727	KickerDudeMake		TID_KABOCHA_FANG_SKIN
+728	DuplicatorDarkcircus		TID_COBRA_LOLA_SKIN
+729	NinjaBrawloween		TID_WHITE_WOLF_LEON_SKIN
+730	CocoonerRosie		TID_ROSIE_CHARLIE_SKIN
+731	DuplicatorCholaChroma		TID_LAVISH_LOLA_SKIN
+732	SoulCollectorRare		TID_BOY_SCOUT_GUS_SKIN
+733	BowDudeHinduChroma		TID_BROTHER_BO_SKIN
+734	CocoonerRare		TID_AMAZING_CHARLIE_SKIN
+735	CocoonerCocoonRare		
+736	CocoonerCocoonRosie		
+737	CocoonerPetRosie		
+738	CocoonerPetRare		
+739	fd6a7e0d574ebcf7f3a610c0c8504bb4c3d175be		
+740	LeaperDefault		
+741	AttacherDefault		
+742	HammerDudeClashKingChromaRed		TID_RED_KING_FRANK_SKIN
+743	RollerChristmas		TID_SANTA_STU_SKIN
+744	SilencerWorldfinals		TID_W_OTS_SKIN
+745	SniperCarnival		TID_FLAG_BEARER_PIPER_SKIN
+746	LuchadorSuperbowl		TID_EL_QUARTERBACK_SKIN
+747	Leaperwukong		TID_WUKONG_MICO_SKIN
+748	LeaperRare		TID_MACARON_MICO_SKIN
+749	KickerDudeFuriousChroma		TID_FEROCIOUS_FANG_SKIN
+750	HammerDudeClashKingChromaBlue		TID_BLUE_KING_FRANK_SKIN
+751	TwinsDefault		
+752	TwinsPetDefault		
+753	Cactuscartoon		TID_TOON_SPIKE_SKIN
+754	LeaperDarkXmas		TID_GROUCH_MICO_SKIN
+755	MechanicDoll		TID_DOLL_JESSIE_SKIN
+756	MechanicTurretDoll		
+757	Percenteranime		TID_PINKU_PAWLETTE_SKIN
+758	AttacherBoxer		TID_KITBOXER_SKIN
+759	DeadMariachiorigins		TID_CCTV_POCO_SKIN
+760	TrickshotDudeDevil		TID_FINAL_BOSS_RICO_SKIN
+761	TwinsRare		TID_LARRY_&_LAWRIE_CONTROLLERS_SKIN
+762	AttacherRare		TID_BILLY_THE_KIT_SKIN
+763	GunslingerDarkAngel		TID_DARK_ANGEL_COLT_SKIN
+764	PercenteranimeChromaGreen		TID_MIDORI_PAWLETTE_SKIN
+765	PercenteranimeChromaYellow		TID_KIIRO_PAWLETTE_SKIN
+766	ArcadeVirusChroma		TID_8BIT_ANTIVIRUS_SKIN
+767	AttacherBoxerChromaGoldpaw		TID_KITBOXER_GOLDPAW_SKIN
+768	AttacherBoxerChromaDarkpaw		TID_KITBOXER_DARKPAW_SKIN
+769	TwinsPetRare		
+770	DamageBoosterVirusChroma		
+771	SurgeLune		TID_SURGE_LINGLONGPORCELAIN
+772	JanetTriky		TID_JANET_TRIKY
+773	EmzGraffiti		TID_EMZ_GRAFFITI
+774	EmzGraffiti		TID_EMZ_GRAFFITI
+775	EmzGraffiti		TID_EMZ_GRAFFITI
+776	ByronFrenk		TID_BYRON_FRANK
+777	SpikeCarreta		TID_SPIKE_CARRETA
+778	Jestercoolkid		TID_CHESTER_COOLKID
+779	BuzzFishman		TID_BUZZ_FISHERMAN
+780	BeaVamp		TID_BEA_VAMPIRE
+781	CrowDoctor		TID_DOCTOR_CROW
+782	CrowDoctor		TID_DOCTOR_CROW
+783	CrowDoctor		TID_DOCTOR_CROW
+784	RicoGhost		TID_RICO_GHOST

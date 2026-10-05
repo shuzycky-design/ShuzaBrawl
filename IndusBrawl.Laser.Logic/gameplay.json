@@ -1,0 +1,58 @@
+{
+  "slots": [
+    {
+      "slot": 1,
+      "location": 0,
+      "game_modes": [ "GemGrab" ],
+      "modificators": []
+    },
+    {
+      "slot": 3,
+      "location": 0,
+      "game_modes": [ "Heist" ],
+      "modificators": []
+    },
+    {
+      "slot": 4,
+      "location": 0,
+      "game_modes": ["Bounty"],
+       "modificators": []
+    },
+    {
+      "slot": 5,
+      "location": 0,
+      "game_modes": ["Invasion"],
+      "modificators": []
+    },
+    {
+      "slot": 6,
+      "location": 0,
+      "game_modes": ["ProtectKing"],
+      "modificators": []
+    },
+    {
+      "slot": 8,
+      "location": 0,
+      "game_modes": [ "Deathmatch" ],
+      "modificators": []
+    },
+    {
+      "slot": 10,
+      "location": 0,
+      "game_modes": [ "Bounty" ],
+      "modificators": [15]
+    },
+    {
+      "slot": 18,
+      "location": 0,
+      "game_modes": ["Invasion"],
+      "modificators": []
+    },
+    {
+      "slot": 20,
+      "location": 0,
+      "game_modes": ["Invasion"],
+      "modificators": []
+    }
+  ]
+}

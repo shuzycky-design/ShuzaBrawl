@@ -1,0 +1,13 @@
+{
+  "udp_host": "IP_ВАШЕГО_СЕРВЕРА",
+  "udp_port": 1337,
+  "database_username": "root",
+  "database_password": "ПАРОЛЬ_MYSQL",
+  "database_name": "shuzabrawl",
+  "database_timeout": 120,
+  "admin_port": 8086,
+  "admin_login": "admin",
+  "admin_password": "ПРИДУМАЙТЕ_ПАРОЛЬ",
+  "telegram_bot_token": "",
+  "telegram_admin_ids": []
+}

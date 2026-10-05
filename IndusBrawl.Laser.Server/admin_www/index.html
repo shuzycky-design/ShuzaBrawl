@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ShuzaBrawl — админ-панель</title>
+<style>
+  :root {
+    --bg: #12141a; --panel: #1b1f29; --panel2: #232836; --line: #2f3545;
+    --text: #e8eaf0; --muted: #8d95a8; --accent: #ffc400; --accent-text: #1a1400;
+    --ok: #3ecf8e; --bad: #ff5c5c; --info: #4aa8ff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  h1, h2, h3 { margin: 0; font-weight: 650; }
+  h2 { font-size: 18px; margin-bottom: 12px; }
+  h3 { font-size: 15px; margin: 18px 0 8px; color: var(--muted); font-weight: 600; }
+  button, input, select { font: inherit; color: inherit; }
+  input, select {
+    background: var(--panel2); border: 1px solid var(--line); border-radius: 8px;
+    padding: 8px 10px; width: 100%; min-width: 0;
+  }
+  input:focus, select:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  button {
+    background: var(--panel2); border: 1px solid var(--line); border-radius: 8px;
+    padding: 8px 14px; cursor: pointer; white-space: nowrap;
+  }
+  button:hover { border-color: var(--muted); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 650; }
+  button.danger { color: var(--bad); }
+  button:disabled { opacity: .5; cursor: default; }
+  .hidden { display: none !important; }
+
+  /* вход */
+  #login { min-height: 100vh; display: grid; place-items: center; padding: 16px; }
+  #login form { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 28px; width: 100%; max-width: 360px; }
+  #login h1 { font-size: 22px; margin-bottom: 4px; }
+  #login p { color: var(--muted); margin: 0 0 20px; }
+  #login .field { margin-bottom: 14px; }
+  #login button { width: 100%; margin-top: 6px; }
+
+  /* каркас */
+  header { display: flex; align-items: center; gap: 16px; padding: 12px 20px; background: var(--panel); border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  header .brand { font-weight: 700; font-size: 17px; }
+  header .brand span { color: var(--accent); }
+  nav { display: flex; gap: 4px; flex-wrap: wrap; }
+  nav button { border-color: transparent; background: transparent; color: var(--muted); }
+  nav button.active { background: var(--panel2); color: var(--text); border-color: var(--line); }
+  header .spacer { flex: 1; }
+  main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 60px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin-bottom: 16px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; }
+  .row > .grow { flex: 1 1 160px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .stat { background: var(--panel2); border-radius: 10px; padding: 12px 14px; }
+  .stat b { display: block; font-size: 22px; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .muted { color: var(--muted); }
+  .tablewrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; }
+  tr.click { cursor: pointer; }
+  tr.click:hover td { background: var(--panel2); }
+  .tag { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; border: 1px solid var(--line); color: var(--muted); }
+  .tag.ok { color: var(--ok); border-color: var(--ok); }
+  .tag.bad { color: var(--bad); border-color: var(--bad); }
+  .tag.info { color: var(--info); border-color: var(--info); }
+  .tag.vip { color: var(--accent); border-color: var(--accent); }
+  #toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; padding: 10px 16px; max-width: 90vw; z-index: 10; }
+  #toast.bad { border-color: var(--bad); color: var(--bad); }
+  #toast.ok { border-color: var(--ok); }
+  .note { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  .items { display: grid; gap: 8px; margin: 6px 0 10px; }
+  .item { display: grid; grid-template-columns: minmax(130px, 1fr) minmax(0, 3fr) auto; gap: 8px; align-items: center; }
+  .item .fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; }
+  textarea { background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; width: 100%; font: inherit; color: inherit; resize: vertical; }
+  @media (max-width: 560px) { .item { grid-template-columns: 1fr auto; } .item .fields { grid-column: 1 / -1; grid-row: 2; } }
+</style>
+</head>
+<body>
+
+<section id="login" class="hidden">
+  <form id="loginForm" autocomplete="on">
+    <h1>ShuzaBrawl</h1>
+    <p>Админ-панель</p>
+    <div class="field"><label for="lg">Логин</label><input id="lg" name="username" autocomplete="username" required></div>
+    <div class="field"><label for="pw">Пароль</label><input id="pw" name="password" type="password" autocomplete="current-password" required></div>
+    <button class="primary" type="submit">Войти</button>
+  </form>
+</section>
+
+<div id="app" class="hidden">
+  <header>
+    <div class="brand">Shuza<span>Brawl</span> · админка</div>
+    <nav>
+      <button data-tab="stats" class="active">Сводка</button>
+      <button data-tab="players">Игроки</button>
+      <button data-tab="offers">Акции магазина</button>
+      <button data-tab="mail">Рассылка</button>
+      <button data-tab="payments">Покупки VIP</button>
+    </nav>
+    <div class="spacer"></div>
+    <button id="logout">Выйти</button>
+  </header>
+
+  <main>
+    <!-- Сводка -->
+    <section data-view="stats">
+      <div class="card">
+        <h2>Сервер</h2>
+        <div class="grid" id="statGrid"></div>
+        <h3>Техработы</h3>
+        <div class="row">
+          <span id="maintState" class="tag"></span>
+          <button id="maintBtn"></button>
+        </div>
+        <p class="note">При включённых техработах игроки не могут войти в игру.</p>
+      </div>
+    </section>
+
+    <!-- Игроки -->
+    <section data-view="players" class="hidden">
+      <div class="card">
+        <h2>Игроки</h2>
+        <form id="searchForm" class="row">
+          <div class="grow"><label for="q">Тэг (#2PP) или часть имени. Пусто — топ по кубкам</label><input id="q" placeholder="#2PP"></div>
+          <button class="primary" type="submit">Найти</button>
+        </form>
+        <div class="tablewrap" style="margin-top:12px">
+          <table>
+            <thead><tr><th>Тэг</th><th>Имя</th><th>Кубки</th><th>Статус</th></tr></thead>
+            <tbody id="playerRows"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card hidden" id="playerCard">
+        <h2 id="pTitle"></h2>
+        <div class="grid" id="pStats"></div>
+        <p class="note">Любое изменение переподключает игрока, если он сейчас в игре — иначе он не увидит изменения.</p>
+
+        <h3>Ресурсы</h3>
+        <form id="resForm">
+          <div class="grid">
+            <div><label for="rGems">Гемы</label><input id="rGems" type="number"></div>
+            <div><label for="rGold">Монеты</label><input id="rGold" type="number"></div>
+            <div><label for="rPP">Очки силы</label><input id="rPP" type="number"></div>
+            <div><label for="rBl">Блинги</label><input id="rBl" type="number"></div>
+            <div><label for="rMode">Действие</label>
+              <select id="rMode"><option value="add">Добавить</option><option value="set">Установить ровно</option></select></div>
+          </div>
+          <div class="row" style="margin-top:10px"><button class="primary" type="submit">Применить</button>
+            <span class="muted">Пустые поля не меняются. В режиме «Добавить» можно отрицательные числа.</span></div>
+        </form>
+
+        <h3>VIP (x2 кубки и 100 гемов в неделю)</h3>
+        <div class="row">
+          <button data-vip="30">+30 дней</button>
+          <button data-vip="90">+90 дней</button>
+          <button data-vip="180">+180 дней</button>
+          <button data-vip="0" class="danger">Снять VIP</button>
+        </div>
+
+        <h3>Действия</h3>
+        <div class="row">
+          <button id="maxBtn">Выдать всё</button>
+          <button id="dropBtn">Выдать стардроп</button>
+          <button id="drop10Btn">Выдать 10 стардропов</button>
+          <button id="kickBtn">Отключить от сервера</button>
+          <button id="banBtn" class="danger"></button>
+        </div>
+        <p class="note">Стардроп выдаётся только игроку, который сейчас в игре: он открывается у него сразу.</p>
+        <p class="note">«Выдать всё» — все бойцы 11 уровня с пассивками, гаджетами, гиперзарядами и снаряжением, все скины, аватарки, пины и титулы.</p>
+
+        <h3>Имя</h3>
+        <form id="nameForm" class="row">
+          <div class="grow"><input id="newName" maxlength="15" placeholder="Новое имя"></div>
+          <button type="submit">Переименовать</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Акции -->
+    <section data-view="offers" class="hidden">
+      <div class="card">
+        <h2>Новая акция</h2>
+        <form id="offerForm">
+          <div class="grid">
+            <div><label for="oTitle">Название в магазине</label><input id="oTitle" maxlength="40" required></div>
+            <div><label for="oCurrency">Валюта</label>
+              <select id="oCurrency"><option value="0">Гемы</option><option value="1">Монеты</option><option value="6">Блинги</option></select></div>
+            <div><label for="oCost">Цена (0 — бесплатно)</label><input id="oCost" type="number" min="0" value="0"></div>
+            <div><label for="oOld">Старая цена (зачёркнутая)</label><input id="oOld" type="number" min="0" value="0"></div>
+            <div><label for="oBg">Фон</label>
+              <select id="oBg">
+                <option value="offer_bgr_retro2023">Обычный (ретро)</option>
+                <option value="offer_coins">Монеты</option>
+                <option value="offer_power">Очки силы</option>
+                <option value="offer_bling">Блинги</option>
+                <option value="offer_bgr_starter">Стартовый</option>
+                <option value="offer_bgr_legendary">Легендарный</option>
+                <option value="offer_bgr_legendary_dark">Легендарный тёмный</option>
+                <option value="offer_bgr_giftshop">Подарочный</option>
+                <option value="offer_bgr_jungle">Джунгли</option>
+                <option value="offer_bgr_candyland">Конфетный</option>
+                <option value="offer_bgr_enchanted">Зачарованный</option>
+              </select></div>
+            <div><label for="oStart">Начало (ваше местное время; пусто — сразу)</label><input id="oStart" type="datetime-local"></div>
+            <div><label for="oEnd">Окончание (ваше местное время)</label><input id="oEnd" type="datetime-local" required></div>
+          </div>
+          <h3>Состав акции</h3>
+          <div class="items" id="oItems"></div>
+          <button type="button" id="oAddItem">+ Добавить товар</button>
+          <p class="note">Несколько товаров — это набор: игрок платит один раз и получает всё сразу. До 5 товаров.</p>
+          <div class="row" style="margin-top:12px"><button class="primary" type="submit">Создать акцию</button>
+            <span class="muted" id="oClock"></span></div>
+          <p class="note">Каждый игрок может купить акцию один раз. Игроки увидят новую акцию при следующем входе в игру.</p>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Акции</h2>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Название</th><th>Состав</th><th>Цена</th><th>Период</th><th>Статус</th><th></th></tr></thead>
+            <tbody id="offerRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Рассылка -->
+    <section data-view="mail" class="hidden">
+      <div class="card">
+        <h2>Письмо на внутриигровую почту</h2>
+        <form id="mailForm">
+          <div class="grid">
+            <div><label for="mTo">Кому</label>
+              <select id="mTo"><option value="one">Одному игроку</option><option value="all">Всем игрокам</option></select></div>
+            <div id="mTagBox"><label for="mTag">Тэг игрока</label><input id="mTag" placeholder="#2PP"></div>
+          </div>
+          <div style="margin-top:10px"><label for="mText">Текст письма (до 200 символов)</label>
+            <textarea id="mText" rows="2" maxlength="200" placeholder="Подарок от ShuzaBrawl!"></textarea></div>
+          <h3>Награды</h3>
+          <div class="items" id="mItems"></div>
+          <button type="button" id="mAddItem">+ Добавить награду</button>
+          <p class="note">Каждая награда приходит отдельным письмом с кнопкой «Забрать». Без наград уйдёт обычное текстовое письмо. Скин, который у игрока уже есть, повторно не отправляется.</p>
+          <div class="row" style="margin-top:12px"><button class="primary" type="submit">Отправить</button></div>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Отправленные письма</h2>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Дата</th><th>Кому</th><th>Получателей</th><th>Текст</th><th>Награды</th></tr></thead>
+            <tbody id="mailRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Покупки VIP -->
+    <section data-view="payments" class="hidden">
+      <div class="card">
+        <h2>Покупки VIP за звёзды Telegram</h2>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Дата</th><th>Аккаунт</th><th>Срок</th><th>Звёзды</th><th>Telegram ID</th><th>VIP до</th></tr></thead>
+            <tbody id="payRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="toast" class="hidden" role="status"></div>
+
+<script>
+'use strict';
+const $ = (id) => document.getElementById(id);
+const el = (tag, props = {}, ...children) => {
+  const node = Object.assign(document.createElement(tag), props);
+  for (const child of children) node.append(child);
+  return node;
+};
+// Сервер хранит время в UTC; показываем и вводим в местном времени браузера
+function parseTime(value) {
+  if (!value) return null;
+  const text = String(value);
+  const date = new Date(/[zZ]|[+-]\d\d:\d\d$/.test(text) ? text : text + 'Z');
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+const pad = (n) => String(n).padStart(2, '0');
+function fmtDate(value) {
+  const d = parseTime(value);
+  return d ? d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes()) : '—';
+}
+const toUtc = (localValue) => localValue ? new Date(localValue).toISOString() : '';
+const fmtNum = (value) => Number(value || 0).toLocaleString('ru-RU');
+
+let toastTimer;
+function toast(text, kind = 'ok') {
+  const node = $('toast');
+  node.textContent = text;
+  node.className = kind;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => node.classList.add('hidden'), 4000);
+}
+
+async function api(path, body) {
+  const response = await fetch('/api' + path, body === undefined ? {} : {
+    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)
+  });
+  let data = null;
+  try { data = await response.json(); } catch (e) {}
+  if (response.status === 401 && path !== '/login') { showLogin(); throw new Error('Требуется вход'); }
+  if (!response.ok) throw new Error((data && data.error) || ('Ошибка ' + response.status));
+  return data;
+}
+
+// Обёртка: показывает ошибку и блокирует кнопку на время запроса
+async function run(button, action, okText) {
+  if (button) button.disabled = true;
+  try {
+    const result = await action();
+    if (okText) toast(okText);
+    return result;
+  } catch (error) {
+    toast(error.message, 'bad');
+  } finally {
+    if (button) button.disabled = false;
+  }
+}
+
+function showLogin() { $('app').classList.add('hidden'); $('login').classList.remove('hidden'); $('lg').focus(); }
+function showApp() { $('login').classList.add('hidden'); $('app').classList.remove('hidden'); openTab('stats'); }
+
+$('loginForm').addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const button = event.target.querySelector('button');
+  await run(button, async () => {
+    await api('/login', { login: $('lg').value, password: $('pw').value });
+    $('pw').value = '';
+    showApp();
+  });
+});
+$('logout').addEventListener('click', async () => { await run(null, () => api('/logout', {})); showLogin(); });
+
+// ---------- Вкладки ----------
+const loaders = { stats: loadStats, players: () => searchPlayers(), offers: loadOffers, mail: loadMail, payments: loadPayments };
+function openTab(name) {
+  document.querySelectorAll('nav button').forEach((b) => b.classList.toggle('active', b.dataset.tab === name));
+  document.querySelectorAll('[data-view]').forEach((v) => v.classList.toggle('hidden', v.dataset.view !== name));
+  run(null, loaders[name]);
+}
+document.querySelectorAll('nav button').forEach((b) => b.addEventListener('click', () => openTab(b.dataset.tab)));
+
+// ---------- Сводка ----------
+let maintenance = false;
+async function loadStats() {
+  const s = await api('/stats');
+  maintenance = s.maintenance;
+  const items = [
+    [s.online, 'игроков онлайн'], [fmtNum(s.accounts), 'аккаунтов всего'],
+    [s.offers, 'акций в магазине'], [s.vipPurchases, 'покупок VIP'], [fmtNum(s.vipStars), 'звёзд получено'],
+    [Math.floor(s.uptimeMinutes / 60) + ' ч ' + (s.uptimeMinutes % 60) + ' мин', 'сервер работает'],
+  ];
+  $('statGrid').replaceChildren(...items.map(([value, label]) => el('div', { className: 'stat' }, el('b', { textContent: value }), el('span', { textContent: label }))));
+  $('maintState').textContent = maintenance ? 'Техработы включены' : 'Сервер открыт';
+  $('maintState').className = 'tag ' + (maintenance ? 'bad' : 'ok');
+  $('maintBtn').textContent = maintenance ? 'Выключить техработы' : 'Включить техработы';
+}
+$('maintBtn').addEventListener('click', async (event) => {
+  if (!maintenance && !confirm('Включить техработы? Игроки не смогут войти в игру.')) return;
+  await run(event.target, async () => { await api('/maintenance', { enabled: !maintenance }); await loadStats(); });
+});
+
+// ---------- Игроки ----------
+let current = null;
+function statusTags(p) {
+  const box = el('span');
+  if (p.online) box.append(el('span', { className: 'tag ok', textContent: 'в игре' }), ' ');
+  if (p.vip) box.append(el('span', { className: 'tag vip', textContent: 'VIP' }), ' ');
+  if (p.banned) box.append(el('span', { className: 'tag bad', textContent: 'бан' }));
+  return box;
+}
+async function searchPlayers() {
+  const list = await api('/players?q=' + encodeURIComponent($('q').value.trim()));
+  const rows = list.map((p) => {
+    const row = el('tr', { className: 'click' },
+      el('td', { textContent: p.tag }), el('td', { textContent: p.name || '—' }),
+      el('td', { textContent: fmtNum(p.trophies) }), el('td', {}, statusTags(p)));
+    row.addEventListener('click', () => run(null, () => openPlayer(p.tag)));
+    return row;
+  });
+  if (!rows.length) rows.push(el('tr', {}, el('td', { colSpan: 4, className: 'muted', textContent: 'Никого не найдено' })));
+  $('playerRows').replaceChildren(...rows);
+  if (list.length === 1) await openPlayer(list[0].tag);
+}
+$('searchForm').addEventListener('submit', (event) => { event.preventDefault(); run(event.target.querySelector('button'), searchPlayers); });
+
+function showPlayer(p) {
+  current = p;
+  $('playerCard').classList.remove('hidden');
+  $('pTitle').replaceChildren(p.name + ' ', el('span', { className: 'muted', textContent: p.tag + ' ' }), statusTags(p));
+  const items = [
+    [fmtNum(p.trophies), 'кубков'], [fmtNum(p.gems), 'гемов'], [fmtNum(p.gold), 'монет'],
+    [fmtNum(p.powerPoints), 'очков силы'], [fmtNum(p.blings), 'блингов'], [p.brawlers, 'бойцов'], [p.skins, 'скинов'],
+    [p.vip ? fmtDate(p.vipExpire).slice(0, 10) : 'нет', 'VIP до'], [fmtDate(p.lastOnline), 'был в игре'],
+  ];
+  $('pStats').replaceChildren(...items.map(([value, label]) => el('div', { className: 'stat' }, el('b', { textContent: value }), el('span', { textContent: label }))));
+  $('banBtn').textContent = p.banned ? 'Разбанить' : 'Забанить';
+}
+async function openPlayer(tag) {
+  showPlayer(await api('/player?tag=' + encodeURIComponent(tag)));
+  $('playerCard').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+const playerAction = (button, path, body, okText) => run(button, async () => showPlayer(await api(path, { tag: current.tag, ...body })), okText);
+
+$('resForm').addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const body = { mode: $('rMode').value, gems: $('rGems').value, gold: $('rGold').value, powerPoints: $('rPP').value, blings: $('rBl').value };
+  await playerAction(event.target.querySelector('button'), '/player/resources', body, 'Ресурсы обновлены');
+  event.target.reset();
+});
+document.querySelectorAll('[data-vip]').forEach((button) => button.addEventListener('click', () => {
+  const days = Number(button.dataset.vip);
+  if (days === 0 && !confirm('Снять VIP с ' + current.tag + '?')) return;
+  playerAction(button, '/player/vip', { days }, days ? 'VIP продлён' : 'VIP снят');
+}));
+$('maxBtn').addEventListener('click', (event) => {
+  if (confirm('Выдать ' + current.tag + ' всех бойцов и всю косметику? Отменить это нельзя.'))
+    playerAction(event.target, '/player/max', {}, 'Выдано');
+});
+$('banBtn').addEventListener('click', (event) => {
+  const banned = !current.banned;
+  if (banned && !confirm('Забанить ' + current.tag + '?')) return;
+  playerAction(event.target, '/player/ban', { banned }, banned ? 'Игрок забанен' : 'Бан снят');
+});
+for (const [id, count] of [['dropBtn', 1], ['drop10Btn', 10]]) {
+  $(id).addEventListener('click', (event) => run(event.target, async () => {
+    const result = await api('/player/starrdrop', { tag: current.tag, count });
+    toast('Выдано стардропов: ' + result.given);
+  }));
+}
+$('kickBtn').addEventListener('click', (event) => run(event.target, async () => {
+  const result = await api('/player/kick', { tag: current.tag });
+  toast(result.kicked ? 'Игрок отключён' : 'Игрок сейчас не в игре');
+}));
+$('nameForm').addEventListener('submit', async (event) => {
+  event.preventDefault();
+  await playerAction(event.target.querySelector('button'), '/player/rename', { name: $('newName').value }, 'Имя изменено');
+  $('newName').value = '';
+});
+
+// ---------- Справочники и строки товаров ----------
+let catalog = null;
+let names = { brawlers: {}, skins: {} };
+async function loadCatalog() {
+  if (catalog) return;
+  catalog = await api('/catalog');
+  try { names = await (await fetch('/names.json')).json(); } catch (e) {}
+  for (const b of catalog.brawlers) b.title = names.brawlers[b.id] || b.name;
+  for (const k of catalog.skins) k.title = names.skins[k.id] || null;
+  catalog.brawlers.sort((a, b) => a.title.localeCompare(b.title, 'ru'));
+}
+const brawlerTitle = (id) => (catalog.brawlers.find((b) => b.id === id) || {}).title || ('боец #' + id);
+const skinTitle = (id) => { const k = catalog.skins.find((x) => x.id === id); return (k && (k.title || k.name)) || ('скин #' + id); };
+const byId = (list, id) => (list.find((x) => x.id === id) || {}).name || ('#' + id);
+
+// Скины бойца: с русским названием; если таких нет - все по внутренним именам
+function skinsOf(brawlerId) {
+  const all = catalog.skins.filter((k) => k.brawlerId === brawlerId);
+  const named = all.filter((k) => k.title);
+  return (named.length ? named : all).slice().sort((a, b) => (a.title || a.name).localeCompare(b.title || b.name, 'ru'));
+}
+
+// Строка выбора товара. kinds: [{ value, label, mode: 'count' | 'skin' | 'brawler' | 'pin' | 'icon' }]
+function makeItemRow(kinds, container) {
+  const type = el('select');
+  type.replaceChildren(...kinds.map((k) => el('option', { value: k.value, textContent: k.label })));
+  const fields = el('div', { className: 'fields' });
+  const remove = el('button', { type: 'button', className: 'danger', textContent: '✕', title: 'Убрать' });
+  const node = el('div', { className: 'item' }, type, fields, remove);
+  let read = () => ({});
+
+  function render() {
+    const kind = kinds.find((k) => String(k.value) === type.value);
+    if (kind.mode === 'count') {
+      const count = el('input', { type: 'number', min: 1, value: 100, placeholder: 'Количество' });
+      fields.replaceChildren(count);
+      read = () => ({ count: count.value });
+    } else if (kind.mode === 'skin') {
+      const brawler = el('select');
+      brawler.replaceChildren(...catalog.brawlers.filter((b) => skinsOf(b.id).length).map((b) => el('option', { value: b.id, textContent: b.title })));
+      const skin = el('select');
+      const fill = () => skin.replaceChildren(...skinsOf(Number(brawler.value)).map((k) => el('option', { value: k.id, textContent: k.title || k.name })));
+      brawler.addEventListener('change', fill);
+      fill();
+      fields.replaceChildren(brawler, skin);
+      read = () => ({ target: Number(skin.value) });
+    } else if (kind.mode === 'brawler') {
+      const brawler = el('select');
+      brawler.replaceChildren(...catalog.brawlers.map((b) => el('option', { value: b.id, textContent: b.title })));
+      fields.replaceChildren(brawler);
+      read = () => ({ target: Number(brawler.value) });
+    } else {
+      const listId = 'dl' + Math.random().toString(36).slice(2);
+      const input = el('input', { placeholder: 'начните вводить название' });
+      input.setAttribute('list', listId);
+      const list = el('datalist', { id: listId });
+      list.replaceChildren(...catalog[kind.mode === 'pin' ? 'pins' : 'icons'].map((x) => el('option', { value: x.id + ' — ' + x.name })));
+      fields.replaceChildren(input, list);
+      read = () => { const m = /^\s*(\d+)/.exec(input.value); return { target: m ? Number(m[1]) : null }; };
+    }
+  }
+  type.addEventListener('change', render);
+  remove.addEventListener('click', () => { node.remove(); });
+  render();
+  node.readItem = () => {
+    const kind = kinds.find((k) => String(k.value) === type.value);
+    const value = read();
+    if (kind.mode === 'count' && !(Number(value.count) >= 1)) throw new Error('Укажите количество: ' + kind.label);
+    if (kind.mode !== 'count' && (value.target === null || Number.isNaN(value.target))) throw new Error('Выберите из списка: ' + kind.label);
+    return { kind, ...value };
+  };
+  container.append(node);
+  return node;
+}
+const readItems = (container) => [...container.children].map((node) => node.readItem());
+
+// ---------- Акции ----------
+const offerKinds = [
+  { value: 16, label: 'Гемы', mode: 'count' }, { value: 1, label: 'Монеты', mode: 'count' },
+  { value: 41, label: 'Очки силы', mode: 'count' }, { value: 45, label: 'Блинги', mode: 'count' },
+  { value: 4, label: 'Скин', mode: 'skin' }, { value: 3, label: 'Боец', mode: 'brawler' },
+  { value: 19, label: 'Пин', mode: 'pin' }, { value: 25, label: 'Аватарка', mode: 'icon' },
+];
+const currencyNames = { 0: 'гемов', 1: 'монет', 6: 'блингов' };
+const statusNames = { active: ['Идёт', 'ok'], planned: ['Запланирована', 'info'], ended: ['Завершена', ''], off: ['Выключена', 'bad'] };
+
+function describeItem(i) {
+  const kind = offerKinds.find((k) => k.value === i.Item);
+  if (!kind) return 'товар #' + i.Item;
+  if (kind.mode === 'count') return kind.label + ' × ' + fmtNum(i.Count);
+  if (kind.mode === 'skin') return 'Скин: ' + skinTitle(i.ExtraId);
+  if (kind.mode === 'brawler') return 'Боец: ' + brawlerTitle(i.BrawlerId);
+  return kind.label + ': ' + byId(catalog[kind.mode === 'pin' ? 'pins' : 'icons'], i.ExtraId);
+}
+function renderOffers(data) {
+  $('oClock').textContent = 'Время указывается ваше местное. Сейчас: ' + fmtDate(data.serverTime);
+  const rows = data.offers.map((o) => {
+    const [label, kind] = statusNames[o.status];
+    const toggle = el('button', { textContent: o.Enabled ? 'Выключить' : 'Включить' });
+    toggle.addEventListener('click', () => run(toggle, async () => renderOffers(await api('/offers/toggle', { id: o.Id, enabled: !o.Enabled }))));
+    const remove = el('button', { className: 'danger', textContent: 'Удалить' });
+    remove.addEventListener('click', () => {
+      if (confirm('Удалить акцию «' + o.Title + '»?')) run(remove, async () => renderOffers(await api('/offers/delete', { id: o.Id })), 'Акция удалена');
+    });
+    const price = o.Cost ? fmtNum(o.Cost) + ' ' + currencyNames[o.Currency] : 'бесплатно';
+    const parts = el('td');
+    o.items.forEach((i, n) => { if (n) parts.append(el('br')); parts.append(describeItem(i)); });
+    return el('tr', {},
+      el('td', { textContent: o.Title }), parts, el('td', { textContent: price }),
+      el('td', { textContent: fmtDate(o.Start) + ' → ' + fmtDate(o.End) }),
+      el('td', {}, el('span', { className: 'tag ' + kind, textContent: label })),
+      el('td', {}, toggle, ' ', remove));
+  });
+  if (!rows.length) rows.push(el('tr', {}, el('td', { colSpan: 6, className: 'muted', textContent: 'Акций пока нет' })));
+  $('offerRows').replaceChildren(...rows);
+}
+async function loadOffers() {
+  await loadCatalog();
+  if (!$('oItems').children.length) makeItemRow(offerKinds, $('oItems'));
+  renderOffers(await api('/offers'));
+}
+$('oAddItem').addEventListener('click', () => {
+  if ($('oItems').children.length >= 5) { toast('В наборе не больше 5 товаров', 'bad'); return; }
+  makeItemRow(offerKinds, $('oItems'));
+});
+$('offerForm').addEventListener('submit', async (event) => {
+  event.preventDefault();
+  await run(event.target.querySelector('button[type=submit]'), async () => {
+    const items = readItems($('oItems')).map((i) => ({ item: i.kind.value, count: i.count, target: i.target }));
+    if (!items.length) throw new Error('Добавьте хотя бы один товар');
+    renderOffers(await api('/offers', {
+      title: $('oTitle').value, items, currency: Number($('oCurrency').value),
+      cost: $('oCost').value, oldCost: $('oOld').value, background: $('oBg').value,
+      start: toUtc($('oStart').value), end: toUtc($('oEnd').value),
+    }));
+    $('oTitle').value = '';
+    toast('Акция создана');
+  });
+});
+
+// ---------- Рассылка ----------
+const mailKinds = [
+  { value: 'gems', label: 'Гемы', mode: 'count' }, { value: 'gold', label: 'Монеты', mode: 'count' },
+  { value: 'powerPoints', label: 'Очки силы', mode: 'count' }, { value: 'blings', label: 'Блинги', mode: 'count' },
+  { value: 'skin', label: 'Скин', mode: 'skin' },
+];
+function describeReward(r) {
+  const kind = mailKinds.find((k) => k.value === r.Type);
+  if (!kind) return r.Type;
+  return kind.mode === 'skin' ? 'Скин: ' + skinTitle(r.SkinId) : kind.label + ' × ' + fmtNum(r.Count);
+}
+async function loadMail() {
+  await loadCatalog();
+  const list = await api('/mail');
+  const rows = list.map((m) => {
+    const rewards = el('td');
+    (m.Rewards || []).forEach((r, n) => { if (n) rewards.append(el('br')); rewards.append(describeReward(r)); });
+    if (!(m.Rewards || []).length) rewards.textContent = '—';
+    return el('tr', {}, el('td', { textContent: fmtDate(m.SentAt) }), el('td', { textContent: m.To }),
+      el('td', { textContent: m.Recipients }), el('td', { textContent: m.Text, style: 'white-space:normal' }), rewards);
+  });
+  if (!rows.length) rows.push(el('tr', {}, el('td', { colSpan: 5, className: 'muted', textContent: 'Писем пока не было' })));
+  $('mailRows').replaceChildren(...rows);
+}
+$('mTo').addEventListener('change', () => $('mTagBox').classList.toggle('hidden', $('mTo').value === 'all'));
+$('mAddItem').addEventListener('click', async () => {
+  await run(null, loadCatalog);
+  if ($('mItems').children.length >= 10) { toast('Не больше 10 наград', 'bad'); return; }
+  makeItemRow(mailKinds, $('mItems'));
+});
+$('mailForm').addEventListener('submit', async (event) => {
+  event.preventDefault();
+  await run(event.target.querySelector('button[type=submit]'), async () => {
+    const all = $('mTo').value === 'all';
+    const rewards = readItems($('mItems')).map((i) => ({ type: i.kind.value, count: i.count, target: i.target }));
+    if (all && !confirm('Отправить письмо ВСЕМ игрокам? Отозвать его будет нельзя.')) return;
+    const result = await api('/mail', { to: all ? 'all' : $('mTag').value, text: $('mText').value, rewards });
+    toast('Отправлено игрокам: ' + result.sent);
+    $('mText').value = '';
+    $('mItems').replaceChildren();
+    await loadMail();
+  });
+});
+
+// ---------- Покупки ----------
+async function loadPayments() {
+  const list = await api('/payments');
+  const rows = list.map((p) => el('tr', {},
+    el('td', { textContent: fmtDate(p.PaidAt) }), el('td', { textContent: p.AccountTag }),
+    el('td', { textContent: p.Days + ' дн.' }), el('td', { textContent: p.Stars }),
+    el('td', { textContent: p.TelegramUserId }), el('td', { textContent: fmtDate(p.VipExpire).slice(0, 10) })));
+  if (!rows.length) rows.push(el('tr', {}, el('td', { colSpan: 6, className: 'muted', textContent: 'Покупок пока нет' })));
+  $('payRows').replaceChildren(...rows);
+}
+
+// ---------- Старт ----------
+fetch('/api/me').then((response) => response.ok ? showApp() : showLogin()).catch(showLogin);
+</script>
+</body>
+</html>

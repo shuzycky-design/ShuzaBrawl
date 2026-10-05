@@ -1,0 +1,20 @@
+{
+  "AccountIds": [
+    1
+  ],
+  "AllAccounts": true,
+  "TwoPhase": true,
+  "DeliveryTrailer": null,
+  "SkipPassBool": false,
+  "OpenCount": -1,
+  "ClaimCount": -1,
+  "PendingContainer": -1,
+  "DeliveryContainer": -2,
+  "PendingC": 4,
+  "FlagsByte": 2,
+  "F60": -1,
+  "F64": -1,
+  "TileAck": false,
+  "TileAckPresentation": 2,
+  "TileBonusCoins": 0
+}

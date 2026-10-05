@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Топы ShuzaBrawl</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #0A0A0A;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #C5A572 0%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        /* Стили для кнопки на главную */
+        .site-button {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .main-site-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #C5A572 0%, #D4AF37 100%);
+            color: #0A0A0A;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            border: 2px solid #D4AF37;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(197, 165, 114, 0.3);
+        }
+        .main-site-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(197, 165, 114, 0.5);
+        }
+        .main-site-btn i {
+            font-size: 1.3rem;
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            padding: 15px 40px;
+            background: transparent;
+            border: 2px solid #C5A572;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 30px;
+        }
+        .tab-btn:hover {
+            background: rgba(197, 165, 114, 0.1);
+            transform: translateY(-2px);
+        }
+        .tab-btn.active {
+            background: linear-gradient(135deg, #C5A572 0%, #D4AF37 100%);
+            color: #0A0A0A;
+            border-color: #D4AF37;
+        }
+        .ranking-container {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(197,165,114,0.2);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .ranking-header {
+            display: grid;
+            grid-template-columns: 80px 1fr 150px 150px;
+            padding: 20px;
+            background: rgba(197,165,114,0.1);
+            border-bottom: 2px solid #C5A572;
+            font-weight: 600;
+            color: #C5A572;
+        }
+        .ranking-item {
+            display: grid;
+            grid-template-columns: 80px 1fr 150px 150px;
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(197,165,114,0.1);
+            transition: all 0.3s ease;
+            align-items: center;
+        }
+        .ranking-item:hover {
+            background: rgba(197,165,114,0.05);
+        }
+        .rank-number {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #C5A572;
+        }
+        .rank-1 .rank-number { color: #FFD700; text-shadow: 0 0 10px rgba(255,215,0,0.5); }
+        .rank-2 .rank-number { color: #C0C0C0; text-shadow: 0 0 10px rgba(192,192,192,0.5); }
+        .rank-3 .rank-number { color: #CD7F32; text-shadow: 0 0 10px rgba(205,127,50,0.5); }
+        .player-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        .player-rank {
+            color: #D4AF37;
+            font-weight: 600;
+        }
+        .player-progress {
+            color: #8A8A8A;
+        }
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #8A8A8A;
+        }
+        .loading i {
+            margin-right: 10px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .update-time {
+            text-align: center;
+            margin-top: 20px;
+            color: #8A8A8A;
+            font-size: 0.9rem;
+        }
+        
+        /* Исправленная опечатка */
+        .tab-btn:nth-child(2) {
+            /* стили уже есть выше */
+        }
+        
+        @media (max-width: 768px) {
+            .ranking-header {
+                grid-template-columns: 60px 1fr 100px 100px;
+                font-size: 0.9rem;
+            }
+            .ranking-item {
+                grid-template-columns: 60px 1fr 100px 100px;
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            .tab-btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Кнопка перехода на официальный сайт -->
+        <div class="site-button">
+            <a href="https://t.me/shuzabrawl" target="_blank" class="main-site-btn">
+                <i class="fas fa-globe"></i>
+                Перейти на официальный сайт
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        
+        <h1>🏆 Топы ShuzaBrawl</h1>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick='loadRanking("solo")'>Соло лига</button>
+            <button class="tab-btn" onclick='loadRanking("team")'>Командная лига</button>
+            <button class="tab-btn" onclick='loadRanking("global")'>Глобальный</button>
+        </div>
+        
+        <div id="ranking-container" class="ranking-container">
+            <div class="ranking-header" id="ranking-header">
+                <span>№</span><span>Игрок</span><span>Ранг</span><span>Прогресс</span>
+            </div>
+            <div id="ranking-list" class="loading">
+                <i class="fas fa-spinner"></i> Загрузка топов...
+            </div>
+        </div>
+        
+        <div id="update-time" class="update-time"></div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+        let currentType = 'solo';
+        
+        function getRankName(rank) {
+            const ranks = ['', 'Бронза I', 'Бронза II', 'Бронза III', 'Серебро I', 'Серебро II', 'Серебро III', 
+                          'Золото I', 'Золото II', 'Золото III', 'Алмаз', 'Мифический', 'Легендарный'];
+            return ranks[rank] || 'Ранг ' + rank;
+        }
+        
+        async function loadRanking(type) {
+            currentType = type;
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            const listElement = document.getElementById('ranking-list');
+            listElement.innerHTML = '<div class="loading"><i class="fas fa-spinner"></i> Загрузка топов...</div>';
+            
+            const header = document.getElementById('ranking-header');
+            if (type === 'global') {
+                header.innerHTML = '<span>№</span><span>Игрок</span><span>Трофеи</span><span></span>';
+            } else {
+                header.innerHTML = '<span>№</span><span>Игрок</span><span>Ранг</span><span>Прогресс</span>';
+            }
+            
+            try {
+                // ИСПРАВЛЕНО: добавлен полный URL с портом 8085
+                const response = await fetch(`/api/ranked/${type}`);
+                const data = await response.json();
+                
+                if (!data || data.length === 0) {
+                    listElement.innerHTML = '<div class="loading">Нет данных</div>';
+                    return;
+                }
+                
+                let html = '';
+                data.forEach((player, index) => {
+                    const rankClass = index < 3 ? ` rank-${index + 1}` : '';
+                    
+                    if (type === 'global') {
+                        html += `
+                            <div class="ranking-item${rankClass}">
+                                <span class="rank-number">#${index + 1}</span>
+                                <span class="player-name">${player.name || 'Безымянный'}</span>
+                                <span class="player-rank">${player.trophies || 0}</span>
+                                <span class="player-progress"></span>
+                            </div>
+                        `;
+                    } else {
+                        html += `
+                            <div class="ranking-item${rankClass}">
+                                <span class="rank-number">#${index + 1}</span>
+                                <span class="player-name">${player.name || 'Безымянный'}</span>
+                                <span class="player-rank">${getRankName(player.rank)}</span>
+                                <span class="player-progress">${player.progress || 0}</span>
+                            </div>
+                        `;
+                    }
+                });
+                
+                listElement.innerHTML = html;
+                document.getElementById('update-time').innerHTML = 
+                    'Последнее обновление: ' + new Date().toLocaleString('ru-RU');
+                
+            } catch (error) {
+                console.error('Error:', error);
+                listElement.innerHTML = '<div class="loading" style="color: #ff6b6b;">Ошибка загрузки данных. Проверьте подключение к серверу.</div>';
+            }
+        }
+        
+        window.onload = function() {
+            loadRanking.call({target: document.querySelector('.tab-btn')}, 'solo');
+        };
+        
+        setInterval(() => {
+            loadRanking.call({target: document.querySelector(`.tab-btn[onclick*="${currentType}"]`)}, currentType);
+        }, 30000);
+    </script>
+</body>
+</html>
